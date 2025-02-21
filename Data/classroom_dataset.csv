@@ -1,0 +1,660 @@
+Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDisabili;audio;banchiElettrificati;didatticaADistanza;documentCamera;lavagna;microfoni_fissi;microfoni_wireless;monitorTouch;pannelloControllo;postazionePcDocente;pred_hdmi_ospite;pred_vga_ospite;proiettore;puntoRistoro;rete;rete_wifi;sensore_ambientale;telecamera_amb_automatica;telecamera_amb_manuale;webConference;webcam
+1;Palazzina Einaudi;Aula Azzurra;Corso Regina Margherita, 60, Torino;45.0723333, 7.6975789;18;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+2;Palazzina Einaudi;Aula Rosa;Corso Regina Margherita, 60, Torino;45.0723333, 7.6975789;36;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+3;Palazzina Einaudi;Aula Verde;Corso Regina Margherita, 60, Torino;45.0723333, 7.6975789;49;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+4;C.so S.Maurizio 31/a;Aula 10;Corso S.Maurizio 31/a, Torino;45.0714463, 7.6932774;165;1;0;0;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;1;1;1;1
+5;C.so S.Maurizio 31/a;Aula 12;Corso S.Maurizio 31/a, Torino;45.0714463, 7.6932774;30;1;0;0;1;0;1;1;1;1;1;0;0;1;0;1;1;0;1;1;0;0;0;1;1
+6;C.so S.Maurizio 31/a;Aula 3;Corso S.Maurizio 31/a, Torino;45.0714463, 7.6932774;8;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+7;C.so S.Maurizio 31/a;Aula 5;Corso S.Maurizio 31/a, Torino;45.0714463, 7.6932774;30;1;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+8;C.so S.Maurizio 31/a;Aula 8 Informatica - Thin Client;Corso S.Maurizio 31/a, Torino;45.0714463, 7.6932774;12;12;1;0;0;0;1;1;1;0;0;1;0;1;1;1;1;0;1;1;0;0;0;1;1
+9;C.so S.Maurizio 31/a;Aula 9 Informatica -  le postazioni PC sono 40;Corso S.Maurizio 31/a, Torino;45.0714463, 7.6932774;80;40;1;0;1;0;1;1;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+10;Campus Luigi Einaudi;A1 V. Pareto;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;134;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+11;Campus Luigi Einaudi;A2 P. Jannac;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;134;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+12;Campus Luigi Einaudi;A3 P. Greco;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;154;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+13;Campus Luigi Einaudi;A4 G. Mosca;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;126;0;0;1;1;0;1;1;1;0;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+14;Campus Luigi Einaudi;Aula 2D125 Giurisprudenza (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;12;0;0;1;1;0;0;0;0;1;0;0;0;1;1;0;1;0;1;1;0;1;0;1;1
+15;Campus Luigi Einaudi;Aula 2D263 Meeting Room Giurisprudenza (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;19;0;0;1;1;0;0;0;0;1;0;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+16;Campus Luigi Einaudi;Aula 3D101 EST (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;19;0;0;1;1;0;0;0;1;1;0;1;0;1;1;0;1;0;1;1;0;1;0;1;1
+17;Campus Luigi Einaudi;Aula 3D136 EST (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;29;0;0;1;1;0;0;0;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+18;Campus Luigi Einaudi;Aula 3D233 CPS (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;11;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+19;Campus Luigi Einaudi;Aula 3D439 CPS (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;12;0;0;1;1;0;1;0;1;0;0;1;0;1;1;0;1;0;1;1;0;1;0;1;1
+20;Campus Luigi Einaudi;Aula 3D440 CPS (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;15;0;0;1;1;0;1;0;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+21;Campus Luigi Einaudi;Aula 3D441 CPS (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;13;0;0;1;1;0;1;0;1;0;0;1;0;1;1;0;1;0;1;1;0;1;0;1;1
+22;Campus Luigi Einaudi;Aula 3D453 CPS (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;18;0;0;1;1;0;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+23;Campus Luigi Einaudi;Aula G1 - Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;24;25;0;1;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+24;Campus Luigi Einaudi;Aula G2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;24;0;0;1;1;0;1;0;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+25;Campus Luigi Einaudi;Aula G3 - NON PRENOTABILE;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;24;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+26;Campus Luigi Einaudi;Aula Magna;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;322;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+27;Campus Luigi Einaudi;B1 G. Grosso;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;149;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+28;Campus Luigi Einaudi;B2 F.Barbano;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;124;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+29;Campus Luigi Einaudi;B3 M. Roccella;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;125;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+30;Campus Luigi Einaudi;C1;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;79;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+31;Campus Luigi Einaudi;C2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;93;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+32;Campus Luigi Einaudi;C3 P. Farnetti;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;43;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+33;Campus Luigi Einaudi;C4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;92;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+34;Campus Luigi Einaudi;D1 Primo Levi;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;147;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+35;Campus Luigi Einaudi;D2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;43;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+36;Campus Luigi Einaudi;D3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;74;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+37;Campus Luigi Einaudi;D4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;75;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+38;Campus Luigi Einaudi;D5;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;154;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+39;Campus Luigi Einaudi;E1 A. Passerin;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;147;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+40;Campus Luigi Einaudi;E2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;43;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+41;Campus Luigi Einaudi;E3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;74;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+42;Campus Luigi Einaudi;E4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;75;0;0;1;1;0;1;1;1;1;0;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+43;Campus Luigi Einaudi;E5;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;151;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+44;Campus Luigi Einaudi;Einaudi 1;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;264;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+45;Campus Luigi Einaudi;Einaudi 2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;432;0;0;1;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
+46;Campus Luigi Einaudi;Einaudi 3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;433;0;0;1;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
+47;Campus Luigi Einaudi;Einaudi 4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;193;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+48;Campus Luigi Einaudi;Einaudi 5;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;201;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+49;Campus Luigi Einaudi;Einaudi 6;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;193;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+50;Campus Luigi Einaudi;Einaudi 7;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;193;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+51;Campus Luigi Einaudi;Einaudi Seminari 1;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;23;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+52;Campus Luigi Einaudi;Einaudi Seminari 2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;21;0;0;1;1;0;0;0;1;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+53;Campus Luigi Einaudi;Einaudi Seminari 3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;22;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+54;Campus Luigi Einaudi;Einaudi Seminari 4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;11;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+55;Campus Luigi Einaudi;F1;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;43;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+56;Campus Luigi Einaudi;F2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;64;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+57;Campus Luigi Einaudi;F3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;64;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+58;Campus Luigi Einaudi;F4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;64;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+59;Campus Luigi Einaudi;F5;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;43;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+60;Campus Luigi Einaudi;H1;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;135;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+61;Campus Luigi Einaudi;H2;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;77;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+62;Campus Luigi Einaudi;H3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;55;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+63;Campus Luigi Einaudi;H4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;66;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+64;Campus Luigi Einaudi;H5;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;66;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+65;Campus Luigi Einaudi;H6;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;32;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+66;Campus Luigi Einaudi;H7;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+67;Campus Luigi Einaudi;H8;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;33;0;0;1;1;0;1;1;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+68;Campus Luigi Einaudi;LAB. LI1 - Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;77;78;1;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+69;Campus Luigi Einaudi;LAB. LI2 (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;25;21;1;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+70;Campus Luigi Einaudi;LAB. LI3 - Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;45;46;1;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+71;Campus Luigi Einaudi;LAB. LI4 - Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;46;47;1;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+72;Campus Luigi Einaudi;LAB. LI5 - Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;71;72;1;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+73;Campus Luigi Einaudi;Li6 - Laboratorio Informatico  Adriano Olivetti;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;77;77;1;1;1;1;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+74;Campus Luigi Einaudi;LL1 - Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;47;48;1;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+75;Campus Luigi Einaudi;LL2 - Thin Client e Pc (no prenot);Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;44;46;1;1;1;0;1;0;0;1;0;1;1;1;1;0;1;0;1;1;0;0;0;1;1
+76;Campus Luigi Einaudi;LL3;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;25;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+77;Campus Luigi Einaudi;LL4;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;44;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+78;Campus Luigi Einaudi;LL5;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;36;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+79;Campus Luigi Einaudi;LL6;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;37;0;0;1;1;0;1;1;1;1;0;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+80;Campus Luigi Einaudi;LL7;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;52;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+81;Campus Luigi Einaudi;Open Space Thin Client;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;40;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+82;Campus Luigi Einaudi;Sala Lauree Blu G.;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;83;0;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+83;Campus Luigi Einaudi;Sala Lauree Blu P.;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;24;0;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+84;Campus Luigi Einaudi;Sala Lauree Rossa Gr.;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;68;0;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+85;Campus Luigi Einaudi;Sala Lauree Rossa P.;Lungo Dora Siena, 100, Torino;45.0737596, 7.6991614;24;0;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+86;Campus Samev;CD1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;1;0;1;1;1;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+87;Campus Samev;CD2;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+88;Campus Samev;CD3;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;24;0;0;0;1;0;1;1;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+89;Campus Samev;Clinical Skill Lab 1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;80;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+90;Campus Samev;Economia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;10;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;0;1;1;0;0;0;0;0
+91;Campus Samev;Godina;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;100;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+92;Campus Samev;Informatica PT- ATRIO - DISAFA;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;18;17;1;0;1;0;1;0;1;0;0;0;0;1;0;1;1;0;1;1;1;0;0;0;1
+93;Campus Samev;Lab. Analisi Sensoriali;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;22;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+94;Campus Samev;Lab. Analisi strumentale - Tec. Alimentari;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+95;Campus Samev;Lab. Analisi Territoriale (GIS) AREA MENSA - Info;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;19;19;1;0;1;1;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+96;Campus Samev;Lab. Chimica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;60;0;0;0;0;0;1;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
+97;Campus Samev;Lab. Entomologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;48;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+98;Campus Samev;Lab. Informatico 1 grande (DSV)- Thin Client;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;55;29;1;0;1;0;0;0;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+99;Campus Samev;Lab. Informatico 2 piccolo (DSV) - Thin Client;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;40;22;1;0;1;0;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+100;Campus Samev;Laboratorio Biologico;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+101;Campus Samev;Laboratorio Chimico 1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;43;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+102;Campus Samev;Laboratorio Chimico 2;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;22;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+103;Campus Samev;Laboratorio Patologia-Microbiologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;1;1;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
+104;Campus Samev;Micheletto;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;99;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+105;Campus Samev;Microscopi multipli;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+106;Campus Samev;Microscopi singoli;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;45;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+107;Campus Samev;Monti;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;70;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+108;Campus Samev;Ospedale 1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;100;0;0;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+109;Campus Samev;Romisondo;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
+110;Campus Samev;Sala Colonne;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+111;Campus Samev;Sala Osteologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+112;Campus Samev;Sala Riunioni Anatomia Patologica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+113;Campus Samev;Sala Riunioni Farmacologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+114;Campus Samev;Sala Riunioni Infettive;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+115;Campus Samev;Sala Riunioni Ispezione Alimenti;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+116;Campus Samev;Sala Riunioni Parassitologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+117;Campus Samev;Sala Riunioni SDSV;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;30;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+118;Campus Samev;Sala Riunioni Zootecnia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;10;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+119;Campus Samev;Sala Settoria Anatomia Normale;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;40;0;0;0;0;0;1;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
+120;Campus Samev;Sala Settoria Anatomia Patologica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;120;0;0;0;1;0;1;1;0;0;1;0;0;1;0;0;1;0;1;1;0;0;1;0;1
+121;Campus Samev;Samev  1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;1;1;1;1
+122;Campus Samev;Samev  2;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;1;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;1;1;1;1;1
+123;Campus Samev;Samev  3;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;1;1;1;1
+124;Campus Samev;Samev  5 (anche info);Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;1;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+125;Campus Samev;Samev  9;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;84;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+126;Campus Samev;Samev 10;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;24;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+127;Campus Samev;Samev 11;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+128;Campus Samev;Samev 12;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+129;Campus Samev;Samev A;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;196;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;1;0;0;0;1
+130;Campus Samev;Samev B;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;196;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;1;1;1;1
+131;Campus Samev;Samev C;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;196;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;0;1;1;1
+132;Campus Samev;Samev D;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;196;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+133;Campus Samev;Samev Magna A;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;284;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;0;1;1;1
+134;Campus Samev;Samev Magna B;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;284;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;0;0;1;1
+135;Campus Samev;Samev S5;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;1;0;0;0;1
+136;Campus Samev;Samev S6;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;17;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;1;0;0;0;1
+137;Campus Samev;SDSV Allevamento avicoli;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+138;Campus Samev;SDSV Mangimificio;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+139;Campus Samev;SDSV Ovile;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+140;Campus Samev;SDSV Porcilaia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+141;Campus Samev;SDSV Scuderia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+142;Campus Samev;SDSV Stalla bovini;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+143;Campus Samev;Zootecnica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;48;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+144;Centro dell'Innovazione;Aula 12;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;42;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+145;Centro dell'Innovazione;Aula 13;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;42;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+146;Centro dell'Innovazione;Aula 14;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;42;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+147;Centro dell'Innovazione;Aula 17;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;126;0;0;0;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
+148;Centro dell'Innovazione;Aula 18;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;126;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+149;Centro dell'Innovazione;Aula 19;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;96;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+150;Centro dell'Innovazione;Aula 20;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;80;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+151;Centro dell'Innovazione;Aula 21;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;138;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+152;Centro dell'Innovazione;Aula Informatica 16;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;40;21;1;0;1;0;1;1;1;1;0;0;0;1;0;1;1;0;1;1;0;0;0;1;1
+153;Centro dell'Innovazione;Laboratorio 1;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;40;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;0
+154;Centro dell'Innovazione;Laboratorio 6;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;40;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
+155;Cinema Greenwich;Aula 1 Greenwich (PRENOTABILE 8-14);Via Po, 30, Torino;45.0670781, 7.6915839;250;n.d.;0;0;1;0;0;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+156;Cinema Greenwich;Aula 2 Greenwich (PRENOTABILE 8-14);Via Po, 30, Torino;45.0670781, 7.6915839;120;n.d.;0;0;1;0;0;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+157;Cinema Greenwich;Aula 3 Greenwich (PRENOTABILE 8-14);Via Po, 30, Torino;45.0670781, 7.6915839;80;n.d.;0;0;1;0;0;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+158;Cinema Reposi - Via XX Settembre 15;Sala 1 Cinema Reposi;Via XX Settembre, 15, Torino;45.0653588, 7.6792394;303;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+159;Cinema Romano;Sala 1 (Prenotabile da lunedì a venerdì, dalle 08:00 alle 14:00);Piazza Castello, 9, Torino;45.0699416, 7.6868764;110;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+160;Cinema Romano;Sala 2 (prenotabile da lunedì a venerdì, dalle 08:00 alle 14:00);Piazza Castello, 9, Torino;45.0699416, 7.6868764;235;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+161;Cinema UCI Lingotto;SALA 1;Via Nizza, 262, Torino;45.0323743, 7.6661427;139;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+162;Cinema UCI Lingotto;SALA 2;Via Nizza, 262, Torino;45.0323743, 7.6661427;139;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+163;Cinema UCI Lingotto;SALA 3;Via Nizza, 262, Torino;45.0323743, 7.6661427;139;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+164;Cinema UCI Lingotto;SALA 4;Via Nizza, 262, Torino;45.0323743, 7.6661427;139;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+165;Cinema UCI Lingotto;SALA 5;Via Nizza, 262, Torino;45.0323743, 7.6661427;268;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+166;Cinema UCI Lingotto;SALA 7;Via Nizza, 262, Torino;45.0323743, 7.6661427;269;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+167;Cinema UCI Lingotto;SALA 8;Via Nizza, 262, Torino;45.0323743, 7.6661427;139;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+168;Cinema UCI Lingotto;SALA 9;Via Nizza, 262, Torino;45.0323743, 7.6661427;139;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+169;Cli Beinasco;Aula 1 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;70;1;0;1;1;0;1;1;0;1;0;1;0;1;1;1;0;0;1;1;0;0;0;0;1
+170;Cli Beinasco;Aula 10 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;20;n.d.;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+171;Cli Beinasco;Aula 11 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;n.d.;0;1;1;0;1;1;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+172;Cli Beinasco;Aula 2 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;70;1;0;1;1;0;1;1;1;1;0;1;0;1;1;0;0;0;1;1;0;0;0;0;1
+173;Cli Beinasco;Aula 3 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;35;1;0;1;1;0;1;1;1;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+174;Cli Beinasco;Aula 4 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;35;1;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+175;Cli Beinasco;Aula 5 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;1;0;1;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+176;Cli Beinasco;Aula 6 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;70;1;0;1;1;0;1;1;1;1;0;1;0;1;1;0;0;0;1;1;0;0;0;0;1
+177;Cli Beinasco;Aula 7 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;70;1;0;1;1;0;1;1;1;1;0;1;0;1;1;0;0;0;1;1;0;0;0;0;1
+178;Cli Beinasco;Aula 8 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;1;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+179;Cli Beinasco;Aula 9 Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;1;0;1;1;0;1;1;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+180;Cli Beinasco;Aula Informatica Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;40;19;1;1;1;1;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+181;Cli Beinasco;Aula Magna Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;120;n.d.;0;1;1;0;1;1;1;1;1;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+182;Cli Beinasco;Laboratorio A Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;n.d.;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+183;Cli Beinasco;Laboratorio B Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;n.d.;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+184;Cli Beinasco;Laboratorio C Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;25;n.d.;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+185;Cli Beinasco;Sala riunioni Cli Beinasco;Via San Giacomo, 2, Beinasco;45.0296539, 7.5955566;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+186;Complesso Aldo Moro;Auditorium Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;396;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+187;Complesso Aldo Moro;Aula Aldo Moro 1;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;195;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+188;Complesso Aldo Moro;Aula Aldo Moro 2;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;195;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+189;Complesso Aldo Moro;AULA INFORMATICA 1;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;96;96;1;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+190;Complesso Aldo Moro;AULA INFORMATICA 2;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;96;n.d.;1;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+191;Complesso Aldo Moro;Aula S1 Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;180;n.d.;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
+192;Complesso Aldo Moro;Aula S2 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;150;n.d.;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
+193;Complesso Aldo Moro;Aula S3 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;150;n.d.;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
+194;Complesso Aldo Moro;Aula S4 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;50;n.d.;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+195;Complesso Aldo Moro;Aula S5 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;180;n.d.;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+196;Complesso Aldo Moro;Aula S6 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;160;n.d.;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+197;Complesso Aldo Moro;Aula S7 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;76;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+198;Complesso Aldo Moro;Aula S8 Palazzetto Aldo Moro;Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;58;n.d.;0;0;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+199;Complesso Aldo Moro;Sala Lauree (Non prenotabile);Via Sant'Ottavio, 18, Torino;45.0674128, 7.6941972;100;n.d.;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+200;Corso M.D'Azeglio 50;Aula A.Mosso (ingresso V.Michelangelo 27);Corso Massimo D'Azeglio, 50, Torino;45.0501421, 7.6810065;99;0;0;1;1;0;1;1;1;1;1;0;0;1;0;1;1;0;1;1;0;0;0;0;0
+201;Corso M.D'Azeglio 50;Auletta B;Corso Massimo D'Azeglio, 50, Torino;45.0501421, 7.6810065;50;0;0;1;0;0;0;0;1;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
+202;Corso M.D'Azeglio 50;Auletta C;Corso Massimo D'Azeglio, 50, Torino;45.0501421, 7.6810065;30;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+203;Corso M.D'Azeglio 52;Aula A Magna di Anatomia;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;99;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+204;Corso M.D'Azeglio 52;Aula A2 Ingresso da Via Michelangelo 32;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;37;0;0;1;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+205;Corso M.D'Azeglio 52;Aula A4 Ingresso da Via Michelangelo 32;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;62;n.d.;0;1;1;0;1;1;0;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+206;Corso M.D'Azeglio 52;Aula B di Anatomia;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;50;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+207;Corso M.D'Azeglio 52;Aula C Neuro;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;50;n.d.;0;0;1;0;1;0;0;0;0;0;0;1;1;0;1;0;0;0;0;0;0;0;0
+208;Corso M.D'Azeglio 52;Aula Magna Ex Medicina Legale - Cesare Lombroso - INAGIBILE;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;99;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+209;Corso M.D'Azeglio 52;Sala Settoria;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;75;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+210;Corso Raffaello 30;Auletta Morpurgo;Corso Raffaello, 30, Torino;45.0505629, 7.6807729;25;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+211;Corso Raffaello 30;Laboratorio Biochimico;Corso Raffaello, 30, Torino;45.0505629, 7.6807729;20;n.d.;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+212;Dipartimento di Chimica;Aula AG3 Ingresso da via Michelangelo 32;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;35;0;0;1;0;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+213;Dipartimento di Chimica;Aula Avogadro;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;80;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+214;Dipartimento di Chimica;Aula Cannizzaro;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;80;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
+215;Dipartimento di Chimica;Aula D1;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;0;0;0;0;0;1
+216;Dipartimento di Chimica;Aula Diagonale;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;60;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+217;Dipartimento di Chimica;Aula Disegno;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;60;0;0;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+218;Dipartimento di Chimica;Aula Magna di Chimica;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;200;0;0;0;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
+219;Dipartimento di Chimica;Auletta I;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;20;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+220;Dipartimento di Chimica;Auletta II;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;20;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+221;Dipartimento di Chimica;Laboratorio di Analisi Strumentale;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+222;Dipartimento di Chimica;Laboratorio di Analitica;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;80;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+223;Dipartimento di Chimica;Laboratorio di Preparazioni Inorganiche;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;50;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+224;Dipartimento di Chimica;Laboratorio di Sintesi Organica;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+225;Dipartimento di Fisica;Aula A;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;133;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+226;Dipartimento di Fisica;Aula Avogadro;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;37;1;0;1;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+227;Dipartimento di Fisica;Aula C;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;96;1;1;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+228;Dipartimento di Fisica;Aula D;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;48;1;0;1;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+229;Dipartimento di Fisica;Aula F Informatica;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;37;37;0;1;1;0;1;1;1;0;1;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+230;Dipartimento di Fisica;Aula G Informatica;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;36;35;0;1;1;0;1;1;1;0;1;0;0;1;1;1;1;0;1;1;0;0;1;1;1
+231;Dipartimento di Fisica;Aula Magna Regge;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;167;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+232;Dipartimento di Fisica;Aula Verde;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;22;1;0;1;0;0;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+233;Dipartimento di Fisica;Aula Wick;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;38;1;0;1;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+234;Dipartimento di Fisica;Sala Franzinetti;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;43;1;0;1;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+235;Dipartimento di Fisica;Sala Fubini;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;15;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0
+236;Dipartimento di Fisica;Sala Wataghin;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;22;1;0;1;0;0;1;0;1;0;0;0;0;1;0;1;1;0;1;1;0;1;1;1;1
+237;Dipartimento di Informatica;Aula A;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;218;1;1;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;1;1;1
+238;Dipartimento di Informatica;Aula A Turing Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;120;53;1;0;1;0;1;0;0;0;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+239;Dipartimento di Informatica;Aula B;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;218;1;1;0;1;0;1;0;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+240;Dipartimento di Informatica;Aula C;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;177;1;1;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+241;Dipartimento di Informatica;Aula D;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;177;1;0;0;1;0;1;1;0;1;1;1;1;1;1;0;1;0;1;1;0;1;0;1;1
+242;Dipartimento di Informatica;Aula E;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;56;1;0;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+243;Dipartimento di Informatica;Aula E W. Dijkstra Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;72;34;1;0;1;0;0;1;0;1;1;0;1;0;1;0;1;0;1;1;0;0;1;0;0
+244;Dipartimento di Informatica;Aula F;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;108;1;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+245;Dipartimento di Informatica;Aula J. L. Von Neumann Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;60;30;1;0;1;0;0;0;0;0;1;0;0;1;1;0;1;0;1;1;0;0;0;0;0
+246;Dipartimento di Informatica;Aula J. Postel Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;18;12;1;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+247;Dipartimento di Informatica;Laboratorio di sperimentazioni avanzate C. Babbage Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;20;13;1;0;1;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
+248;Dipartimento di Informatica;Sala conferenze Dipartimento di Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;80;0;0;0;1;0;0;0;0;1;0;0;0;0;1;0;1;0;1;1;0;0;0;0;0
+249;Dipartimento di Oncologia V.Michelangelo 27;"Aula A ""Lenti"" Biochimica";Via Michelangelo, 27, Torino;45.0499694, 7.6808209;99;0;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+250;Dipartimento di Oncologia V.Michelangelo 27;Aula B Biomichimica;Via Michelangelo, 27, Torino;45.0499694, 7.6808209;99;0;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+251;Dipartimento di Scienze della Terra;Aula 3;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;25;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+252;Dipartimento di Scienze della Terra;Aula 4;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;25;0;0;0;1;0;1;1;1;0;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+253;Dipartimento di Scienze della Terra;Aula Palazzina;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;50;0;0;0;1;0;1;1;1;0;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+254;Dipartimento di Scienze della Terra;Aula Pognante;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;50;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+255;Dipartimento di Scienze della Terra;Aula Ruffini;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;76;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+256;Dipartimento di Scienze della Terra;Aula Seminterrato;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+257;Dipartimento di Scienze della Terra;Aula Sturani;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;14;0;0;0;1;0;1;0;1;0;0;1;0;0;1;0;1;0;1;0;0;1;1;1;1
+258;Dipartimento di Scienze della Terra;Aula Vallauri;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;96;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+259;Dipartimento di Scienze della Terra;Auletta Microscopi;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;15;0;0;0;0;0;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+260;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 1;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;1;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+261;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 2;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;34;1;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+262;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 4 Informatica;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;24;24;1;0;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+263;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 5;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;18;2;0;0;1;0;1;1;1;1;0;1;0;1;0;1;0;0;1;1;0;1;1;1;1
+264;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula A;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;18;1;0;0;1;0;1;1;1;1;1;0;0;1;0;1;1;0;1;1;0;0;0;1;1
+265;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula B;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;36;1;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;1;1
+266;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula C;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;60;1;0;0;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;0;1;1
+267;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula De Filippi;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;136;1;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+268;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula Magna;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;169;1;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+269;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula Mobile Mac;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;9;9;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+270;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula notebook Acer Dbios;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;40;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+271;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula Studenti Informatica;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;9;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+272;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Laboratorio Biochimico;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;2;0;0;1;0;1;0;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+273;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Laboratorio Culture Cellulari;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;12;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0
+274;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Laboratorio Morfologico;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;40;0;0;1;0;1;0;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+275;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Aula Magna - ex DBV;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;100;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+276;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Auletta I;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;35;0;0;0;1;0;1;1;1;0;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+277;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Auletta II;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+278;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Auletta III;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;56;0;0;0;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+279;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Sala lettura Allioni;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+281;Dipartimento DIST;Auletta GIS - Ala Chevalley ingresso C;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;10;10;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+282;DSTF - Via Giuria 9;Aula B;Via Pietro Giuria, 9, Torino;45.05116495, 7.681147915116832;24;0;0;0;0;0;1;1;1;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+283;DSTF - Via Giuria 9;Aula C;Via Pietro Giuria, 9, Torino;45.05116495, 7.681147915116832;24;1;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+284;DSTF - Via Giuria 9;Aula F;Via Pietro Giuria, 9, Torino;45.05116495, 7.681147915116832;60;0;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+285;DSTF - Via Giuria 9;Aula G;Via Pietro Giuria, 9, Torino;45.05116495, 7.681147915116832;24;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+286;DSTF - Via Giuria 9;"Aula Magna ""Guido Tappi""";Via Pietro Giuria, 9, Torino;45.05116495, 7.681147915116832;150;0;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+287;"Edificio ""Ex La Stampa""";Aula 1 SUISM;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;100;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+288;"Edificio ""Ex La Stampa""";Aula 101 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;250;n.d.;0;1;1;0;0;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;0;0;1
+289;"Edificio ""Ex La Stampa""";Aula 102 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;250;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+290;"Edificio ""Ex La Stampa""";Aula 103 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;250;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+291;"Edificio ""Ex La Stampa""";Aula 104 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;250;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+292;"Edificio ""Ex La Stampa""";Aula 105 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;250;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+293;"Edificio ""Ex La Stampa""";Aula 2 SUISM;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;100;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+294;"Edificio ""Ex La Stampa""";Aula 2.1 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;100;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+295;"Edificio ""Ex La Stampa""";Aula 2.2. Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;100;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+296;"Edificio ""Ex La Stampa""";Aula 2.3 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;120;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+297;"Edificio ""Ex La Stampa""";Aula 2.4 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;50;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+298;"Edificio ""Ex La Stampa""";Aula 2.5 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;50;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+299;"Edificio ""Ex La Stampa""";Aula 2.6 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;50;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+300;"Edificio ""Ex La Stampa""";Aula 2.7 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;180;1;0;0;1;0;1;0;0;1;1;0;0;1;0;0;1;0;1;0;0;0;0;0;1
+301;"Edificio ""Ex La Stampa""";Aula 2.8 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;120;n.d.;0;0;1;0;1;0;0;1;1;0;0;1;0;0;1;0;1;0;0;0;0;0;1
+302;"Edificio ""Ex La Stampa""";Aula 201 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;298;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+303;"Edificio ""Ex La Stampa""";Aula 202 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;268;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+304;"Edificio ""Ex La Stampa""";Aula 203 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;245;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+305;"Edificio ""Ex La Stampa""";AULA 204 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;243;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+306;"Edificio ""Ex La Stampa""";Aula 301 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;177;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+307;"Edificio ""Ex La Stampa""";Aula 302 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;217;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+308;"Edificio ""Ex La Stampa""";Aula 303 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;198;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+309;"Edificio ""Ex La Stampa""";Aula 304 Marenco;Via Gabriele Chiabrera, 27, Torino;45.0451239, 7.679907;100;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+310;Fondazione Guzzo;Aula Guzzo (no prenot);Via Po, 18, Torino;45.0682497, 7.6901070;25;0;0;0;1;0;0;0;0;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+311;Hotel Royal Torino;Sala Odeon Hotel Royal;Corso Regina Margherita, 211, Torino;45.08317, 7.6633972;200;n.d.;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+312;Istituto Cabrini;Sala Cabrini;Via Montebello, 28 bis, Torino;45.0708675, 7.6942603;180;0;0;0;1;0;0;0;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+313;Istituto Galileo Ferraris;Aula A Galfer;Corso Massimo D'Azeglio, 42, Torino;45.0526961, 7.6825949;30;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+314;Istituto Galileo Ferraris;Aula B - Disegno;Corso Massimo D'Azeglio, 42, Torino;45.0526961, 7.6825949;35;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+315;Istituto Galileo Ferraris;Aula C Galfer;Corso Massimo D'Azeglio, 42, Torino;45.0526961, 7.6825949;25;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+316;Istituto Rosmini;Aula 10;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+317;Istituto Rosmini;Aula 11;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;40;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+318;Istituto Rosmini;Aula 12;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+319;Istituto Rosmini;Aula 14;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+320;Istituto Rosmini;Aula 15;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;43;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+321;Istituto Rosmini;Aula 16;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;18;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+322;Istituto Rosmini;Aula 17;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;17;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+323;Istituto Rosmini;Aula 18;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;20;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+324;Istituto Rosmini;Aula 19;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;20;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+325;Istituto Rosmini;Aula 20;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+326;Istituto Rosmini;Aula 21;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+327;Istituto Rosmini;Aula 22;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+328;Istituto Rosmini;Aula 23;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+329;Istituto Rosmini;Aula 24;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+330;Istituto Rosmini;Aula 25;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+331;Istituto Rosmini;Aula 26;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+332;Istituto Rosmini;Aula 27;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+333;Istituto Rosmini;Aula 28;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+334;Istituto Rosmini;Aula 29;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;22;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+335;Istituto Rosmini;Aula 30;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;22;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+336;Istituto Rosmini;Aula 31;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;10;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+337;Istituto Rosmini;Aula 32;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;10;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+338;Istituto Rosmini;Aula 33;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;10;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+339;Istituto Rosmini;Aula 34;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;20;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+340;Istituto Rosmini;Aula 35;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;10;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+341;Istituto Rosmini;Aula 5;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;150;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+342;Istituto Rosmini;Aula 6;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;140;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;1;0;0;1
+343;Istituto Rosmini;Aula 7;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;98;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+344;Istituto Rosmini;Aula 9;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;25;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+345;Istituto Rosmini;Aula Docenti;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;10;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;0
+346;Istituto Rosmini;Aula Informatica Rosmini;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+347;Istituto Rosmini;Aula Magna;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;209;0;0;0;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+348;Lingotto - Dental School;Aula 1;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;1;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+349;Lingotto - Dental School;Aula 2;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+350;Lingotto - Dental School;Aula 3;Via Nizza, 230, Torino;45.0330358, 7.6659645;60;1;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+351;Lingotto - Dental School;Aula 4;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+352;Lingotto - Dental School;Aula 5;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+353;Lingotto - Dental School;Aula 6;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+354;Lingotto - Dental School;Aula COI;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+355;Lingotto - Dental School;Aula Informatica;Via Nizza, 230, Torino;45.0330358, 7.6659645;10;9;1;1;0;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
+356;Lingotto - Dental School;Aula Laboratorio;Via Nizza, 230, Torino;45.0330358, 7.6659645;45;1;0;1;1;1;0;0;1;1;0;0;0;1;0;1;1;0;1;1;0;0;0;0;0
+357;Lingotto - Dental School;Aula Magna;Via Nizza, 230, Torino;45.0330358, 7.6659645;144;2;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+358;Lingotto - Dental School;Aula Manichini;Via Nizza, 230, Torino;45.0330358, 7.6659645;21;1;0;1;1;0;0;0;0;1;0;0;0;0;1;0;1;0;1;1;0;0;0;0;0
+359;MBC;Aula Adenina;Via Nizza, 52, Torino;45.0501781, 7.6739911;15;1;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+360;MBC;Aula Aristotele;Via Nizza, 52, Torino;45.0501781, 7.6739911;106;1;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+361;MBC;Aula Copernico;Via Nizza, 52, Torino;45.0501781, 7.6739911;99;1;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+362;MBC;Aula Darwin;Via Nizza, 52, Torino;45.0501781, 7.6739911;227;1;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;0;0;1
+363;MBC;Aula Eraclito;Via Nizza, 52, Torino;45.0501781, 7.6739911;60;1;0;1;1;0;0;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+364;MBC;Aula Galileo;Via Nizza, 52, Torino;45.0501781, 7.6739911;214;1;0;1;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+365;MBC;Aula Informatica Turing;Via Nizza, 52, Torino;45.0501781, 7.6739911;20;30;1;1;0;0;1;0;0;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+366;MBC;Aula Informatica Von Neumann;Via Nizza, 52, Torino;45.0501781, 7.6739911;20;25;1;1;0;0;1;0;0;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
+367;MBC;Aula Keplero;Via Nizza, 52, Torino;45.0501781, 7.6739911;227;1;0;1;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+368;MBC;Aula Leonardo;Via Nizza, 52, Torino;45.0501781, 7.6739911;106;1;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+369;MBC;Aula Mendel;Via Nizza, 52, Torino;45.0501781, 7.6739911;60;1;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+370;MBC;Aula Seminari MBC;Via Nizza, 52, Torino;45.0501781, 7.6739911;60;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+371;MBC;Aula Timina;Via Nizza, 52, Torino;45.0501781, 7.6739911;25;1;0;1;0;0;0;0;1;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;1
+372;MBC;Sala Palazzina Antica MBC;Via Nizza, 52, Torino;45.0501781, 7.6739911;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+373;MBC;Sala Riunioni MBC;Via Nizza, 52, Torino;45.0501781, 7.6739911;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+374;MBC;Sala Riunioni MBC;Via Nizza, 52, Torino;45.0501781, 7.6739911;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+375;Molinette C.so Bramante 88;Aula di Geriatria;Corso Bramante, 88, Torino;45.0416061, 7.6745153;50;1;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+376;Molinette C.so Bramante 88;Aula Magna A.M. Dogliotti - IN USO DALL'URP;Corso Bramante, 88, Torino;45.0416061, 7.6745153;500;1;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+377;Molinette C.so Dogliotti 14;Aula di Anestesiologia 1 - Palazzina Ciocatto;Corso Achille Mario Dogliotti, 14, Torino;45.0405376, 7.6761269;30;1;0;0;1;0;0;0;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+378;Molinette C.so Dogliotti 14;Aula di Anestesiologia 2;Corso Achille Mario Dogliotti, 14, Torino;45.0405376, 7.6761269;30;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+379;Molinette C.so Dogliotti 14;Aula di Clinica Chirurgica F.Morino;Corso Achille Mario Dogliotti, 14, Torino;45.0405376, 7.6761269;99;1;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+380;Molinette C.so Dogliotti 14;Aula Lenti Medicina Interna;Corso Achille Mario Dogliotti, 14, Torino;45.0405376, 7.6761269;99;1;0;1;1;0;1;1;0;1;1;0;1;1;1;1;1;0;1;1;0;0;1;0;1
+381;Molinette C.so Dogliotti 14;Aula Studenti Medicina Interna;Corso Achille Mario Dogliotti, 14, Torino;45.0405376, 7.6761269;50;1;0;1;1;0;0;0;0;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;0
+382;Molinette C.so Dogliotti 38;Aula informatica ex Palazzina Odontoiatria;Corso Dogliotti, 38, Torino;45.0390862, 7.6759409;30;30;1;1;1;0;0;0;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+383;Molinette C.so Dogliotti 38;Aula Roccia;Corso Dogliotti, 38, Torino;45.0390862, 7.6759409;99;n.d.;0;1;1;0;1;1;0;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+384;Molinette C.so Dogliotti 38;Aula Seminari Palazzina ex Odontoiatria;Corso Dogliotti, 38, Torino;45.0390862, 7.6759409;30;n.d.;0;1;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+385;Molinette C.so Dogliotti 38;T. Center di Medicina Interna;Corso Dogliotti, 38, Torino;45.0390862, 7.6759409;25;n.d.;0;1;1;0;1;0;1;0;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+386;Molinette Via Cherasco 11;Aula Magna di Psi. M.Torre;Via Cherasco, 11, Torino;45.0390777, 7.6727703;99;0;0;1;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;0;0;1
+387;Molinette Via Cherasco 11;Auletta Psichiatria Via Cherasco 11;Via Cherasco, 11, Torino;45.0390777, 7.6727703;40;n.d.;0;1;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+388;Molinette Via Cherasco 15;Aula Magna di Neurologia;Via Cherasco, 15, Torino;45.0386645, 7.6726093;99;1;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+389;Molinette Via Cherasco 15;Auletta di Neurologia;Via Cherasco, 15, Torino;45.0386645, 7.6726093;30;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+390;Molinette Via Genova 3;Aula Biancalana;Via Genova, 3, Torino;45.0412363, 7.6725138;99;0;0;0;1;0;1;1;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+391;Molinette Via Genova 3;Aula Favretto;Via Genova, 3, Torino;45.0412363, 7.6725138;39;0;0;1;1;0;1;1;0;0;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+392;Molinette Via Genova 3;Aula Magna di Medicina Interna - MI1;Via Genova, 3, Torino;45.0412363, 7.6725138;99;0;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+393;Molinette Via Genova 3;Aula Magna di Otorinolaringoiatria - INAGIBILE;Via Genova, 3, Torino;45.0412363, 7.6725138;150;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+394;Molinette Via Genova 3;Aula Radiologia Rad;Via Genova, 3, Torino;45.0412363, 7.6725138;99;0;0;0;1;0;1;0;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
+395;Molinette Via Genova 3;Auletta di ORL - INAGIBILE;Via Genova, 3, Torino;45.0412363, 7.6725138;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+396;Molinette Via Santena 5bis;Aula Magna di Igiene;Via Santena, 5 bis, Torino;45.0372117, 7.6742235;120;0;0;1;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+397;Molinette Via Santena 5bis;Auletta A;Via Santena, 5 bis, Torino;45.0372117, 7.6742235;20;n.d.;0;1;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+398;Molinette Via Santena 5bis;Auletta B;Via Santena, 5 bis, Torino;45.0372117, 7.6742235;12;n.d.;0;1;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+399;Molinette Via Santena 7;Aula B di Anatomia Patologica;Via Santena, 7, Torino;45.037149, 7.674939;50;0;0;1;1;0;1;1;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+400;Molinette Via Santena 7;Aula Magna di Anatomia Patologica;Via Santena, 7, Torino;45.037149, 7.674939;99;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+401;Molinette Via Santena 9;"Aula Magna di Microbiologia ""G.Cavallo""";Via Santena, 9, Torino;45.0371386, 7.6750588;170;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;0;0;1
+402;Molinette Via Santena 9;Auletta A Laboratorio Microbiologia;Via Santena, 9, Torino;45.0371386, 7.6750588;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;1;1;0;0;0;0;0
+403;Molinette Via Santena 9;Auletta B Microbiologia;Via Santena, 9, Torino;45.0371386, 7.6750588;30;n.d.;0;0;0;0;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+404;Ospedale C.T.O.;Aula 1 CTO;Via Zuretti, 29, Torino;45.0333306, 7.6735249;50;n.d.;0;1;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+405;Ospedale C.T.O.;Aula 2 CTO;Via Zuretti, 29, Torino;45.0333306, 7.6735249;50;n.d.;0;1;0;0;1;1;1;1;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+406;Ospedale C.T.O.;Aula Magna di Ortopedia e Traum.;Via Zuretti, 29, Torino;45.0333306, 7.6735249;250;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+407;Ospedale Oftalmico;Aula Magna Ospedale Oftalmico;Via Juvarra, 19, Torino;45.0744382, 7.6707837;99;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+408;Ospedale Regina Margherita;Aula C;Largo Polonia, 94, Torino;45.0350048, 7.6750357;40;0;0;1;0;0;0;1;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+409;Ospedale Regina Margherita;Aula Magna di Pediatria;Largo Polonia, 94, Torino;45.0350048, 7.6750357;99;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+410;Ospedale San Lazzaro;Aula Magna;Via Cherasco, 23, Torino;45.0375618, 7.6721796;99;n.d.;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;0;1
+411;Ospedale Sant'Anna Via Ventimiglia 3;Aula Bocci;Via Ventimiglia, 3, Torino;45.0350181, 7.6730145;99;n.d.;0;0;1;0;1;1;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+412;Ospedale Sant'Anna Via Ventimiglia 3;Aula Delle Piane;Via Ventimiglia, 3, Torino;45.0350181, 7.6730145;99;n.d.;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+413;Palavela Via Ventimiglia 145;Aula 1 Palavela;Via Ventimiglia, 145, Torino;45.023401449999994, 7.66916200505;150;n.d.;0;1;1;0;0;1;1;0;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+414;Palavela Via Ventimiglia 145;Aula 2 Palavela;Via Ventimiglia, 145, Torino;45.023401449999994, 7.66916200505;80;n.d.;0;0;1;0;0;1;0;0;0;1;0;1;0;0;1;0;1;1;0;0;0;0;1
+415;Palavela Via Ventimiglia 145;Aula 3 Palavela;Via Ventimiglia, 145, Torino;45.023401449999994, 7.66916200505;150;n.d.;0;1;1;0;0;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+416;Palavela Via Ventimiglia 145;Aula 4 Palavela;Via Ventimiglia, 145, Torino;45.023401449999994, 7.66916200505;150;n.d.;0;1;1;0;0;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+417;Palazzetto Gorresio;Aula 1;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;22;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+418;Palazzetto Gorresio;Aula 3 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;39;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+419;Palazzetto Gorresio;Aula 4 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;24;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+420;Palazzetto Gorresio;Aula 5 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;53;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+421;Palazzetto Gorresio;Aula 6 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;40;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+422;Palazzetto Gorresio;Aula 7 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;24;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+423;Palazzetto Gorresio;Aula 8 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;39;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+424;Palazzetto Gorresio;Aula 9 P.G;Via Giulia di Barolo, 3/a, Torino;45.066476, 7.6952881;46;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+425;Palazzo Arsenale;Aula 206;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;37;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+426;Palazzo Arsenale;Aula 212;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;22;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+427;Palazzo Arsenale;Aula 220;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+428;Palazzo Arsenale;Aula 221;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;22;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+429;Palazzo Arsenale;Aula 223;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+430;Palazzo Arsenale;Aula 224;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+431;Palazzo Arsenale;Aula 225;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+432;Palazzo Arsenale;Aula 226;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+433;Palazzo Arsenale;Aula 227;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+434;Palazzo Arsenale;Aula 228;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+435;Palazzo Arsenale;Aula 229;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+436;Palazzo Arsenale;Aula 230;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+437;Palazzo Arsenale;Aula L1;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;33;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+438;Palazzo Arsenale;Aula L2;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;29;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+439;Palazzo Arsenale;Aula L3;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;29;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+440;Palazzo Arsenale;Aula Magna;Via dell'Arsenale, 22, Torino;45.0667532, 7.6785811;350;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+441;Palazzo Badini;Sala Lauree;Via Verdi, 10, Torino;45.0691151, 7.6898971;70;1;0;0;1;0;1;1;1;1;1;1;1;1;1;0;1;0;1;1;0;0;1;1;1
+442;Palazzo Badini;Sala Riunioni Massucco Costa;Via Verdi, 10, Torino;45.0691151, 7.6898971;50;1;0;0;1;0;1;1;0;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+443;Palazzo Badini;Sala Seminari;Via Verdi, 10, Torino;45.0691151, 7.6898971;60;1;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+444;Palazzo Campana;Aula 1;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;37;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+445;Palazzo Campana;Aula 2;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;32;0;0;0;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+446;Palazzo Campana;Aula 3;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;32;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+447;Palazzo Campana;Aula 4;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;49;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+448;Palazzo Campana;Aula 5;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;32;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+449;Palazzo Campana;Aula A;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;160;0;0;0;1;0;1;1;1;0;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
+450;Palazzo Campana;Aula B6;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;24;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+451;Palazzo Campana;Aula B7;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;25;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+452;Palazzo Campana;Aula C;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;50;50;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
+453;Palazzo Campana;Aula Informatica 2;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;28;17;1;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+454;Palazzo Campana;Aula Informatica 5 - INAGIBILE;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;96;48;1;1;1;0;0;1;1;1;1;1;0;1;0;1;1;0;1;1;0;0;1;0;0
+455;Palazzo Campana;Aula Istologia;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+456;Palazzo Campana;Aula Lagrange;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;35;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+457;Palazzo Campana;Aula Lessona;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;25;0;0;0;0;0;0;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+458;Palazzo Campana;Aula Lodi;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;16;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+459;Palazzo Campana;Aula Magna;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;99;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+460;Palazzo Campana;Aula Marro;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+461;Palazzo Campana;Aula Monod;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;36;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+462;Palazzo Campana;Aula Spallanzani;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;160;123;1;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+463;Palazzo Campana;Sala Orsi;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;27;0;0;0;1;0;1;1;0;1;0;0;0;1;1;0;1;0;1;1;0;1;1;0;1
+464;Palazzo Campana;Sala Professori;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+465;Palazzo Campana;Sala S;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;45;0;0;0;1;0;1;1;1;0;0;0;1;1;1;1;1;0;1;1;0;0;0;0;1
+466;Palazzo Nuovo;Auditorium Quazza (no prenot);Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;72;0;0;0;1;0;1;0;0;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+467;Palazzo Nuovo;Aula 1;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;480;0;0;0;1;0;1;1;0;0;0;1;1;1;0;1;1;0;1;1;0;0;1;1;1
+468;Palazzo Nuovo;Aula 10;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+469;Palazzo Nuovo;Aula 11;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+470;Palazzo Nuovo;Aula 12;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+471;Palazzo Nuovo;Aula 13;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+472;Palazzo Nuovo;Aula 14;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+473;Palazzo Nuovo;Aula 15;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;121;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+474;Palazzo Nuovo;Aula 16;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+475;Palazzo Nuovo;Aula 17;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+476;Palazzo Nuovo;Aula 18;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;112;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+477;Palazzo Nuovo;Aula 19;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;93;0;0;0;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+478;Palazzo Nuovo;Aula 2;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;240;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+479;Palazzo Nuovo;Aula 20;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;41;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+480;Palazzo Nuovo;Aula 21;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;21;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+481;Palazzo Nuovo;Aula 22;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;18;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+482;Palazzo Nuovo;Aula 23;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;18;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+483;Palazzo Nuovo;Aula 24;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;18;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+484;Palazzo Nuovo;Aula 25;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;20;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+485;Palazzo Nuovo;Aula 3 Magna P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;460;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+486;Palazzo Nuovo;Aula 32;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;217;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+487;Palazzo Nuovo;Aula 33;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+488;Palazzo Nuovo;Aula 34;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+489;Palazzo Nuovo;Aula 35;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+490;Palazzo Nuovo;Aula 36;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+491;Palazzo Nuovo;Aula 37;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+492;Palazzo Nuovo;Aula 38;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+493;Palazzo Nuovo;Aula 39;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;160;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+494;Palazzo Nuovo;Aula 4 P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;69;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+495;Palazzo Nuovo;Aula 5 P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;70;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+496;Palazzo Nuovo;Aula 6 P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;71;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+497;Palazzo Nuovo;Aula 7 P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;48;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+498;Palazzo Nuovo;Aula 8 P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;48;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+499;Palazzo Nuovo;Aula 9 P.N;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+500;Palazzo Nuovo;Aula di Antica (no prenot);Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;25;0;0;0;1;0;0;0;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+501;Palazzo Nuovo;Aula di Medievale (no prenot);Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;1
+502;Palazzo Nuovo;Sala Lauree ex Lettere;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;56;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+503;Palazzo Nuovo;Sala Lauree Gallino (no prenot);Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;35;0;0;0;1;0;1;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+504;Palazzo Nuovo;Sala Lauree Terracini;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;113;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+505;Palazzo Simoni;Aula 301;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+506;Palazzo Simoni;Aula 302;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+507;Palazzo Simoni;Aula 304;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+508;Palazzo Simoni;Aula 305;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+509;Palazzo Simoni;Aula 306;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+510;Palazzo Simoni;Aula 307;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+511;Palazzo Simoni;Aula 308;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+512;Palazzo Simoni;Aula 309;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+513;Palazzo Simoni;Aula 310;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+514;Palazzo Simoni;Aula 311;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+515;Palazzo Simoni;Aula 312;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+516;Palazzo Simoni;Aula 313;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+517;Palazzo Simoni;Aula 314;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+518;Palazzo Simoni;Aula 315;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+519;Palazzo Simoni;Aula 316;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+520;Palazzo Simoni;Aula 317;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;18;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+521;Palazzo Simoni;Aula 318;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+522;Palazzo Simoni;Aula 319;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+523;Palazzo Simoni;Aula 320;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+524;Palazzo Simoni;Aula 321;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+525;Palazzo Simoni;Aula 322;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+526;Palazzo Simoni;Aula 323;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+527;Palazzo Simoni;Aula 324;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+528;Palazzo Simoni;Aula 325;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+529;Palazzo Simoni;Aula 326;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+530;Palazzo Simoni;Aula 327;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+531;Palazzo Simoni;Aula 329;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+532;Palazzo Simoni;Aula 331;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+533;Palazzo Simoni;Aula A5;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;72;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+534;Palazzo Simoni;Aula_303;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+535;Palazzo Venturi;Aula 1A Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;93;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+536;Palazzo Venturi;Aula 1B Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;43;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+537;Palazzo Venturi;Aula 2A Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;37;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+538;Palazzo Venturi;Aula 2B Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;48;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+539;Palazzo Venturi;Aula 2C venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;24;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+540;Palazzo Venturi;Aula 2D Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;24;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+541;Palazzo Venturi;Aula 2E Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;48;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+542;Palazzo Venturi;Aula 2F Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;57;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+543;Palazzo Venturi;Aula L Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;97;1;0;1;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+544;Palazzo Venturi;Aula M Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;150;1;0;1;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;0;0;0;0;0;0
+545;Palazzo Venturi;Aula P;Via Verdi, 25, Torino;45.0687566, 7.6916649;67;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+546;Plana;Aula A;Via Plana, 10, Torino;45.06410255, 7.692050401836395;180;1;0;0;1;0;1;1;1;1;1;1;0;1;1;1;1;0;1;1;0;1;0;1;0
+547;Plana;Aula D Thin Client;Via Plana, 10, Torino;45.06410255, 7.692050401836395;21;26;1;0;1;0;1;0;0;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
+548;Plana;Aula E;Via Plana, 10, Torino;45.06410255, 7.692050401836395;42;1;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+549;Plana;Aula F;Via Plana, 10, Torino;45.06410255, 7.692050401836395;96;1;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+550;Plana;Aula G;Via Plana, 10, Torino;45.06410255, 7.692050401836395;63;1;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+551;Plana;Aula H;Via Plana, 10, Torino;45.06410255, 7.692050401836395;42;1;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+552;Plana;Aula I Thin Client;Via Plana, 10, Torino;45.06410255, 7.692050401836395;24;13;0;0;1;0;1;0;0;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;0
+553;Plana;Aula L;Via Plana, 10, Torino;45.06410255, 7.692050401836395;96;1;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+554;Plana;Aula M;Via Plana, 10, Torino;45.06410255, 7.692050401836395;63;1;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+555;Plana;Aula N;Via Plana, 10, Torino;45.06410255, 7.692050401836395;42;1;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+556;Plana;Aula P;Via Plana, 10, Torino;45.06410255, 7.692050401836395;48;1;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
+557;Polo Teologico;Aula 8 Polo Teologico (prenotabile dal lunedì al giovedì 08:00-17:00, e il venerdì 08:00-13:00);Via XX Settembre, 83, Torino;45.0728706, 7.6843274;80;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+558;Polo Teologico;Aula Magna Polo-Teologico (prenotabile dal lunedì al giovedì 08:00-17:00, e il venerdì 08:00-13:00);Via XX Settembre, 83, Torino;45.0728706, 7.6843274;140;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+559;Polo Teologico;Sala Artistica Polo Teologico (prenotabile dal lunedì al giovedì 08:00-17:00, e il venerdì 08:00-13:00;Via XX Settembre, 83, Torino;45.0728706, 7.6843274;70;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+560;San Luigi Gonzaga;Aula Arancione;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;105;1;0;1;1;1;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;0;1
+561;San Luigi Gonzaga;Aula Blu;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;105;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;0;1
+562;San Luigi Gonzaga;Aula Gialla;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;105;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;0;1
+563;San Luigi Gonzaga;Aula Informatica;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;40;40;1;1;1;0;1;1;0;1;0;0;1;1;1;0;1;0;1;1;0;1;0;0;1
+564;San Luigi Gonzaga;Aula Microscopi;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;35;1;0;1;1;1;0;0;0;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+565;San Luigi Gonzaga;Aula Pescetti;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;70;1;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
+566;San Luigi Gonzaga;Aula Riunioni 1;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;15;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+567;San Luigi Gonzaga;Aula Rossa;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;105;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;0;1
+568;San Luigi Gonzaga;Aula Seminari;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;80;1;0;1;1;0;1;1;1;1;1;1;1;1;1;0;1;0;1;1;0;0;1;0;1
+569;San Luigi Gonzaga;Aula Verde;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;100;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
+570;San Luigi Gonzaga;Aula Viola - San Luigi;Regione Gonzole, 10, Orbassano;45.0294529, 7.5571538;105;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
+571;School of Management - SAA;Aula 1 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;65;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+572;School of Management - SAA;Aula 1 Palavela;Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;180;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+573;School of Management - SAA;Aula 10 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;55;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+574;School of Management - SAA;Aula 11 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;100;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+575;School of Management - SAA;Aula 12 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;60;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+576;School of Management - SAA;Aula 13 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;30;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+577;School of Management - SAA;Aula 14 (Corridoio A);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;60;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+578;School of Management - SAA;Aula 15 (Corridoio A);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;60;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+579;School of Management - SAA;Aula 2 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;150;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+580;School of Management - SAA;Aula 2 Palavela;Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;80;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+581;School of Management - SAA;Aula 3 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;190;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+582;School of Management - SAA;Aula 4 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;65;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+583;School of Management - SAA;Aula 5 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;170;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+584;School of Management - SAA;Aula 6-7 (Corridoio C);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;65;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+585;School of Management - SAA;Aula 8 (Corridoio C);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;15;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+586;School of Management - SAA;Aula 9 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;60;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+587;School of Management - SAA;Aula d'Onore (Corridoio C);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;160;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+588;School of Management - SAA;Aula Magna (Corridoio C);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;300;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+589;School of Management - SAA;Aula Master (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;60;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+590;School of Management - SAA;Laboratorio Informatico 1 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;70;36;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+591;School of Management - SAA;Laboratorio Informatico 2 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;20;21;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+592;School of Management - SAA;Sala Consiglio;Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;48;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+593;School of Management - SAA;Sala Presidenza;Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
+594;SME - Edificio Storico;Atrio Monumentale;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;250;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
+595;SME - Edificio Storico;"Aula ""G Ferrero""";Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;n.d.;0;1;1;1;1;1;1;0;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+596;SME - Edificio Storico;"Aula ""O. Volpatto""";Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;n.d.;0;1;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+597;SME - Edificio Storico;"Aula ""S. Ricossa""";Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;n.d.;0;1;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+598;SME - Edificio Storico;Aula 01;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;230;0;0;1;1;1;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+599;SME - Edificio Storico;Aula 02;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;232;0;0;1;1;1;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+600;SME - Edificio Storico;Aula 03;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;90;0;0;1;1;1;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+601;SME - Edificio Storico;Aula 04;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;90;0;0;1;1;1;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+602;SME - Edificio Storico;Aula 05;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;90;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+603;SME - Edificio Storico;Aula 06;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;90;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+604;SME - Edificio Storico;Aula 07;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;90;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
+605;SME - Edificio Storico;Aula 08;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;90;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+606;SME - Edificio Storico;Aula 09;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;100;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+607;SME - Edificio Storico;Aula 10;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;100;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+608;SME - Edificio Storico;Aula 11;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;98;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+609;SME - Edificio Storico;Aula 12;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;98;0;0;1;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+610;SME - Edificio Storico;Aula Chianale;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;52;0;0;1;1;1;1;1;0;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+611;SME - Edificio Storico;Aula Europa;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;63;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+612;SME - Edificio Storico;Aula Harvard;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;44;0;0;1;1;0;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+613;SME - Edificio Storico;Aula Informatica 30;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;44;0;1;0;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+614;SME - Edificio Storico;Aula Informatica A - Thin Client;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;29;33;1;1;1;1;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+615;SME - Edificio Storico;Aula Informatica B Thin Client;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;28;29;1;1;1;1;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+616;SME - Edificio Storico;Aula Informatica C Thin Client;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;25;26;1;1;1;1;1;1;1;0;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+617;SME - Edificio Storico;Aula Informatica D Thin Client;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;33;1;1;1;1;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+618;SME - Edificio Storico;Aula Jona;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;401;0;0;1;1;1;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;1;1;1;1
+619;SME - Edificio Storico;Aula O. Castellino;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;70;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+620;SME - Edificio Storico;Aula Onida;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;42;0;0;1;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+621;SME - Edificio Storico;Aula R. Corradetti;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;100;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+622;SME - Edificio Storico;Aula Stanford;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;24;0;0;1;1;1;0;0;1;0;0;1;0;1;0;0;1;0;1;1;0;0;0;0;0
+623;SME - Edificio Storico;DATALAB Alessandro Sembenelli;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;3;n.d.;1;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;1;1
+624;SME - Edificio Storico;Direzione Scuola;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;14;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;1;0;1;1;0;0;0;1;1
+625;SME - Edificio Storico;Laboratorio E Thin Client;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;16;16;1;1;0;1;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+626;SME - Edificio Storico;Sala Lauree;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+627;SME - Edificio Storico;Sala Riunioni;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+628;SME - Nuovo Polo Didattico;Atrio NPD;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;200;n.d.;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
+629;SME - Nuovo Polo Didattico;Aula Azzurra;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;132;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+630;SME - Nuovo Polo Didattico;Aula Blu Tosetti Value;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;424;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+631;SME - Nuovo Polo Didattico;Aula Gialla;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;424;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+632;SME - Nuovo Polo Didattico;Aula Magna;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;272;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+633;SME - Nuovo Polo Didattico;Aula Rosa;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;140;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
+634;SME - Nuovo Polo Didattico;Aula Rossa Santander;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;424;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+635;SME - Nuovo Polo Didattico;Aula Superflash Verde;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;424;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
+636;SME - Nuovo Polo Didattico;Auletta Alessandria;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;12;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+637;SME - Nuovo Polo Didattico;Auletta Asti;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+638;SME - Nuovo Polo Didattico;Auletta Biella;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+639;SME - Nuovo Polo Didattico;Auletta Cuneo;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+640;SME - Nuovo Polo Didattico;Auletta Novara;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;0;1;0;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+641;SME - Nuovo Polo Didattico;Auletta Torino;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+642;SME - Nuovo Polo Didattico;Auletta Verbania;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;12;0;0;1;1;0;1;1;1;0;0;1;0;1;1;0;1;0;1;1;0;1;1;1;1
+643;SME - Nuovo Polo Didattico;Auletta Vercelli;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
+644;SME - Nuovo Polo Didattico;Spazio antistante aule Rosa e Azzurra;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;100;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+646;Torino Esposizioni;Aula ToExpo - TE 8;Corso Massimo D'Azeglio, 15/b, Torino;45.0493962, 7.6815192;150;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+647;Via Giuria 15;Aula Microscopi;Via Pietro Giuria, 15, Torino;45.0497552, 7.6797632;30;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+648;Via Giuria 15;Laboratorio Didattico per esercitazioni di Anatomia;Via Pietro Giuria, 15, Torino;45.0497552, 7.6797632;30;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+649;Via Michelangelo 25;Aula Magna Bizzozzero Patologia Generale;Via Michelangelo, 25, Torino;45.064833300000004, 7.583097100000002;99;0;0;0;1;0;1;1;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+650;Via Sant'Ottavio 54;Aula 1.03;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+651;Via Sant'Ottavio 54;Aula 1.05;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;70;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+652;Via Sant'Ottavio 54;Aula 1.13;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;40;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+653;Via Sant'Ottavio 54;Aula 2.03;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+654;Via Sant'Ottavio 54;Aula 2.06;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;70;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+655;Via Sant'Ottavio 54;Aula 3.03;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+656;Via Sant'Ottavio 54;Aula 3.06 Thin Client;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;58;57;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+657;Via Sant'Ottavio 54;Aula 4.03;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+658;Via Sant'Ottavio 54;Aula 4.06;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;70;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+659;Via Sant'Ottavio 54;Aula T.13;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+660;Via Sant'Ottavio 54;Aula T.20;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
+661;Via Sant'Ottavio 54;Aula T.22;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
