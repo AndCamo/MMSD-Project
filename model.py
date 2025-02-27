@@ -14,7 +14,7 @@ SUBCOURSE_CLASS_HOURS = 20  # Required classroom hours per subcourse per week
 SUBCOURSE_LAB_HOURS = 0  # Required lab hours per subcourse per week
 
 # ================= LOAD CLASSROOM DATA =================
-df_rooms = pd.read_csv("Data/classroom_dataset.csv", sep=";")
+df_rooms = pd.read_csv("MMSD-Project/Data/classroom_dataset.csv", sep=";")
 
 A = df_rooms["Code"].tolist()  # List of all classrooms
 L = df_rooms[df_rooms["aulaInformatica"] == 1]["Code"].tolist()  # List of computer labs
@@ -24,13 +24,13 @@ s = dict(zip(df_rooms["Code"], df_rooms["Capienza"]))  # Classroom capacities
 h = dict(zip(df_rooms["Code"], np.full(len(df_rooms), WEEKLY_HOURS)))  # Available hours per week
 
 # ================= LOAD COURSE DATA =================
-df_courses = pd.read_csv("Data/degree_dataset.csv", sep=";")
+df_courses = pd.read_csv("MMSD-Project/Data/degree_dataset.csv", sep=";")
 
 C = df_courses["COD"].tolist()  # List of courses
 n = dict(zip(df_courses["COD"], df_courses["Participants"]))  # Number of students per course
 
 # ================= LOAD DISTANCE DATA =================
-distance_cache = load_distance_dictionary("Data/distance_dictionary.pkl")
+distance_cache = load_distance_dictionary("MMSD-Project/Data/distance_dictionary.pkl")
 
 # ================= CREATE SUBCOURSES AND STUDENT DISTRIBUTION =================
 Y = {c: [f"{c}_Y{i+1}" for i in range(SUBCOURSES_PER_COURSE)] for c in C}  # Generate subcourses
