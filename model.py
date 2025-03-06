@@ -9,10 +9,13 @@ ATTENDANCE_RATE = 0.6  # 60% of students attend classes
 WEEKLY_HOURS = 40  # Hours available per classroom per week
 MORNING_HOURS = 4 * 5  # Hours available in the morning
 EVENING_HOURS = 4 * 5  # Hours available in the evening
-SUBCOURSES_PER_COURSE = 3  # Number of subcourses per course
 SUBCOURSE_CLASS_HOURS = 20  # Required classroom hours per subcourse per week
 SUBCOURSE_LAB_HOURS = 0  # Required lab hours per subcourse per week
 MAX_STUDENTS_PER_CLASS = 250  # Maximum students allowed per subcourse
+
+# CFU values per degree type
+CFU_VALUES = {"I": 180, "II": 120, "CU": 20}
+YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": 1}
 
 # ================= LOAD CLASSROOM DATA =================
 df_rooms = pd.read_csv("Data/classroom_dataset.csv", sep=";")
@@ -29,32 +32,69 @@ df_courses = pd.read_csv("Data/degree_dataset.csv", sep=";")
 
 C = df_courses["COD"].tolist()  # List of courses
 n = dict(zip(df_courses["COD"], df_courses["Participants"]))  # Number of students per course
+course_levels = dict(zip(df_courses["COD"], df_courses["Livello"]))  # Course levels (I, II, CU)
 
 # ================= LOAD DISTANCE DATA =================
 distance_cache = load_distance_dictionary("Data/distance_dictionary.pkl")
 
-# ================= CREATE SUBCOURSES AND STUDENT DISTRIBUTION =================
+# ================= CREATE CFU DISTRIBUTION =================
 Y = {c: [] for c in C}  # Dictionary to store subcourses (and sub-subcourses)
 n_y = {c: {} for c in C}  # Dictionary to store student numbers
+cfu_y = {c: {} for c in C}  # Dictionary to store CFU for each subcourse/sub-subcourse
 
 for c in C:
-    subcourses = [f"{c}_Y{i+1}" for i in range(SUBCOURSES_PER_COURSE)]  # Initial subcourses
-    
+    level = course_levels[c]
+    total_cfu = CFU_VALUES[level]
+    num_years = YEARS_PER_TYPE[level]
+    cfu_per_subcourse = total_cfu / num_years  
+
+    # Determine the number of subcourses based on level
+    if level == "I":
+        num_subcourses = 3
+    elif level == "II":
+        num_subcourses = 2
+    else:  # "CU" or other cases
+        num_subcourses = 0  
+
+    # Create subcourses
+    subcourses = [f"{c}_Y{i+1}" for i in range(num_subcourses)]
+
     for y in subcourses:
-        num_students = int(n[c] * (1 / SUBCOURSES_PER_COURSE))  # Evenly distribute students
-        
+        num_students = round(n[c] / num_subcourses) if num_subcourses > 0 else n[c]
+
         if num_students > MAX_STUDENTS_PER_CLASS:
-            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  # Ceiling division
+            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  
             students_per_sub = num_students // num_subdivisions
             remainder = num_students % num_subdivisions
-            
+
             for i in range(num_subdivisions):
                 subsub_name = f"{y}_Z{i+1}"
                 Y[c].append(subsub_name)
                 n_y[c][subsub_name] = students_per_sub + (1 if i < remainder else 0)
+                cfu_y[c][subsub_name] = cfu_per_subcourse  # Sub-subcourse gets the same CFU as subcourse
         else:
             Y[c].append(y)
             n_y[c][y] = num_students
+            cfu_y[c][y] = cfu_per_subcourse  
+
+    # If no subcourses exist (CU type), enforce MAX_STUDENTS_PER_CLASS
+    if num_subcourses == 0:
+        num_students = n[c]
+
+        if num_students > MAX_STUDENTS_PER_CLASS:
+            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  
+            students_per_sub = num_students // num_subdivisions
+            remainder = num_students % num_subdivisions
+
+            for i in range(num_subdivisions):
+                sub_name = f"{c}_Z{i+1}"
+                Y[c].append(sub_name)
+                n_y[c][sub_name] = students_per_sub + (1 if i < remainder else 0)
+                cfu_y[c][sub_name] = total_cfu  
+        else:
+            Y[c].append(c)
+            n_y[c][c] = num_students
+            cfu_y[c][c] = total_cfu 
 
 # ================= TIME SLOTS =================
 T = ["M", "E"]
@@ -65,8 +105,6 @@ model = ConcreteModel()
 
 # Decision Variables
 model.x = Var([(a, y, c, t) for a in A for c in C for y in Y[c] for t in T], within=Binary)
-#model.delta_u = Var([(y, c) for c in C for y in Y[c]], within=NonNegativeReals)
-#model.delta_q = Var([(y, c) for c in C for y in Y[c]], within=NonNegativeReals)
 
 # ================= CONSTRAINTS =================
 
@@ -128,11 +166,11 @@ else:
             distance = get_distance(dept_location, classroom_location, distance_cache)
 
 
-            allocation_results.append([y, a, t, s[a], n_y[c][y], distance])  # Add distance to output
+            allocation_results.append([y, a, t, s[a], n_y[c][y], distance, course_levels[c], cfu_y[c][y]])
 
     # Convert to DataFrame
     df_results = pd.DataFrame(allocation_results, columns=["Subclass Code", "Classroom ID", "Time Slot",
-                                                            "Classroom Capacity", "Class Size", "Distance (km)"])
+                                                        "Classroom Capacity", "Class Size", "Distance (km)", "Course Level", "CFU"])
 
     # Save to Excel
     with pd.ExcelWriter("Classroom_Allocation.xlsx") as writer:
