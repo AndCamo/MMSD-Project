@@ -5,7 +5,6 @@ from distance import get_distance, load_distance_dictionary
 
 
 # ================= VARIABLE INDEX =================
-ATTENDANCE_RATE = 0.6  # 60% of students attend classes
 WEEKLY_HOURS = 40  # Hours available per classroom per week
 MORNING_HOURS = 4 * 5  # Hours available in the morning
 EVENING_HOURS = 4 * 5  # Hours available in the evening
@@ -16,6 +15,13 @@ MAX_STUDENTS_PER_CLASS = 250  # Maximum students allowed per subcourse
 # CFU values per degree type
 CFU_VALUES = {"I": 180, "II": 120, "CU": 20}
 YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": 1}
+
+# Attendence rate
+ATTENDANCE_RATES = {
+    "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
+    "II": {1: 0.7, 2: 0.6},         # Master's (II)
+    "CU": {1: 0.8}                   # CU (one-year program)
+}
 
 # ================= LOAD CLASSROOM DATA =================
 df_rooms = pd.read_csv("Data/classroom_dataset.csv", sep=";")
@@ -43,7 +49,7 @@ n_y = {c: {} for c in C}  # Dictionary to store student numbers
 cfu_y = {c: {} for c in C}  # Dictionary to store CFU for each subcourse/sub-subcourse
 
 for c in C:
-    level = course_levels[c]
+    level = course_levels[c]  # Get course level (I, II, CU)
     total_cfu = CFU_VALUES[level]
     num_years = YEARS_PER_TYPE[level]
     cfu_per_subcourse = total_cfu / num_years  
@@ -53,48 +59,51 @@ for c in C:
         num_subcourses = 3
     elif level == "II":
         num_subcourses = 2
-    else:  # "CU" or other cases
+    else:
         num_subcourses = 0  
 
     # Create subcourses
     subcourses = [f"{c}_Y{i+1}" for i in range(num_subcourses)]
 
-    for y in subcourses:
-        num_students = round(n[c] / num_subcourses) if num_subcourses > 0 else n[c]
+    for i, y in enumerate(subcourses):
+        year = i + 1  # Year 1, 2, or 3
+        attendance_rate = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
+        num_students = round(n[c] * attendance_rate / num_subcourses) if num_subcourses > 0 else round(n[c] * attendance_rate)
 
         if num_students > MAX_STUDENTS_PER_CLASS:
-            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  
+            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  # Round up
             students_per_sub = num_students // num_subdivisions
             remainder = num_students % num_subdivisions
 
-            for i in range(num_subdivisions):
-                subsub_name = f"{y}_Z{i+1}"
+            for j in range(num_subdivisions):
+                subsub_name = f"{y}_Z{j+1}"
                 Y[c].append(subsub_name)
-                n_y[c][subsub_name] = students_per_sub + (1 if i < remainder else 0)
-                cfu_y[c][subsub_name] = cfu_per_subcourse  # Sub-subcourse gets the same CFU as subcourse
+                n_y[c][subsub_name] = students_per_sub + (1 if j < remainder else 0)
+                cfu_y[c][subsub_name] = cfu_per_subcourse  # Assign CFU
         else:
             Y[c].append(y)
             n_y[c][y] = num_students
             cfu_y[c][y] = cfu_per_subcourse  
 
-    # If no subcourses exist (CU type), enforce MAX_STUDENTS_PER_CLASS
+    # If no subcourses exist (CU type), enforce max class size
     if num_subcourses == 0:
-        num_students = n[c]
+        attendance_rate = ATTENDANCE_RATES[level][1]  # Only one year in CU
+        num_students = round(n[c] * attendance_rate)
 
         if num_students > MAX_STUDENTS_PER_CLASS:
-            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  
+            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)
             students_per_sub = num_students // num_subdivisions
             remainder = num_students % num_subdivisions
 
-            for i in range(num_subdivisions):
-                sub_name = f"{c}_Z{i+1}"
+            for j in range(num_subdivisions):
+                sub_name = f"{c}_Z{j+1}"
                 Y[c].append(sub_name)
-                n_y[c][sub_name] = students_per_sub + (1 if i < remainder else 0)
+                n_y[c][sub_name] = students_per_sub + (1 if j < remainder else 0)
                 cfu_y[c][sub_name] = total_cfu  
         else:
             Y[c].append(c)
             n_y[c][c] = num_students
-            cfu_y[c][c] = total_cfu 
+            cfu_y[c][c] = total_cfu
 
 # ================= TIME SLOTS =================
 T = ["M", "E"]
@@ -120,7 +129,7 @@ model.x = Var([(a, y, c, t) for a in A for c in C for y in Y[c] for t in T], wit
 #     for y in Y[c]:
 #         for a in A:
 #             for t in T:
-#                 model.seat_capacity.add(model.x[a, y, c, t] * n_y[c][y] * ATTENDANCE_RATE <= s[a])
+#                 model.seat_capacity.add(model.x[a, y, c, t] * n_y[c][y] <= s[a])
 
 # # Constraint: Ensure required class and lab hours are met
 # model.hour_request = ConstraintList()
