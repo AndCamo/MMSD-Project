@@ -11,16 +11,17 @@ EVENING_HOURS = 4 * 5  # Hours available in the evening
 SUBCOURSE_CLASS_HOURS = 20  # Required classroom hours per subcourse per week
 SUBCOURSE_LAB_HOURS = 0  # Required lab hours per subcourse per week
 MAX_STUDENTS_PER_CLASS = 250  # Maximum students allowed per subcourse
+WEEK_NUMBER = 12 # Number of weeks in a semester
 
 # CFU values per degree type
-CFU_VALUES = {"I": 180, "II": 120, "CU": 20}
-YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": 1}
+CFU_VALUES = {"I": 180, "II": 120, "CU": 300}
+YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": None}
 
 # Attendence rate
 ATTENDANCE_RATES = {
     "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
     "II": {1: 0.7, 2: 0.6},         # Master's (II)
-    "CU": {1: 0.8}                   # CU (one-year program)
+    "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.6, 6: 0.55}  # CU Attendance rates for 5/6 years
 }
 
 # ================= LOAD CLASSROOM DATA =================
@@ -50,20 +51,23 @@ cfu_y = {c: {} for c in C}  # Dictionary to store CFU for each subcourse/sub-sub
 
 for c in C:
     level = course_levels[c]  # Get course level (I, II, CU)
-    total_cfu = CFU_VALUES[level]
-    num_years = YEARS_PER_TYPE[level]
-    cfu_per_subcourse = total_cfu / num_years  
+    total_cfu = CFU_VALUES[level] 
 
     # Determine the number of subcourses based on level
     if level == "I":
+        num_years = YEARS_PER_TYPE[level]
+        cfu_per_subcourse = total_cfu / num_years 
         num_subcourses = 3
     elif level == "II":
+        num_years = YEARS_PER_TYPE[level]
+        cfu_per_subcourse = total_cfu / num_years 
         num_subcourses = 2
     else:
-        num_subcourses = 0  
+        cfu_per_subcourse = 60
+        num_subcourses = total_cfu / 60  
 
     # Create subcourses
-    subcourses = [f"{c}_Y{i+1}" for i in range(num_subcourses)]
+    subcourses = [f"{c}_Y{i+1}" for i in range(int(num_subcourses))]
 
     for i, y in enumerate(subcourses):
         year = i + 1  # Year 1, 2, or 3
@@ -85,25 +89,25 @@ for c in C:
             n_y[c][y] = num_students
             cfu_y[c][y] = cfu_per_subcourse  
 
-    # If no subcourses exist (CU type), enforce max class size
-    if num_subcourses == 0:
-        attendance_rate = ATTENDANCE_RATES[level][1]  # Only one year in CU
-        num_students = round(n[c] * attendance_rate)
+    # # If no subcourses exist (CU type), enforce max class size
+    # if num_subcourses == 0:
+    #     attendance_rate = ATTENDANCE_RATES[level][1]  # Only one year in CU
+    #     num_students = round(n[c] * attendance_rate)
 
-        if num_students > MAX_STUDENTS_PER_CLASS:
-            num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)
-            students_per_sub = num_students // num_subdivisions
-            remainder = num_students % num_subdivisions
+    #     if num_students > MAX_STUDENTS_PER_CLASS:
+    #         num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)
+    #         students_per_sub = num_students // num_subdivisions
+    #         remainder = num_students % num_subdivisions
 
-            for j in range(num_subdivisions):
-                sub_name = f"{c}_Z{j+1}"
-                Y[c].append(sub_name)
-                n_y[c][sub_name] = students_per_sub + (1 if j < remainder else 0)
-                cfu_y[c][sub_name] = total_cfu  
-        else:
-            Y[c].append(c)
-            n_y[c][c] = num_students
-            cfu_y[c][c] = total_cfu
+    #         for j in range(num_subdivisions):
+    #             sub_name = f"{c}_Z{j+1}"
+    #             Y[c].append(sub_name)
+    #             n_y[c][sub_name] = students_per_sub + (1 if j < remainder else 0)
+    #             cfu_y[c][sub_name] = total_cfu  
+    #     else:
+    #         Y[c].append(c)
+    #         n_y[c][c] = num_students
+    #         cfu_y[c][c] = total_cfu
 
 # ================= TIME SLOTS =================
 T = ["M", "E"]
