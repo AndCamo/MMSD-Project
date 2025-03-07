@@ -70,7 +70,7 @@ for c in C:
     subcourses = [f"{c}_Y{i+1}" for i in range(int(num_subcourses))]
 
     for i, y in enumerate(subcourses):
-        year = i + 1  # Year 1, 2, or 3
+        year = i + 1
         attendance_rate = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
         num_students = round(n[c] * attendance_rate / num_subcourses) if num_subcourses > 0 else round(n[c] * attendance_rate)
 
@@ -88,26 +88,6 @@ for c in C:
             Y[c].append(y)
             n_y[c][y] = num_students
             cfu_y[c][y] = cfu_per_subcourse  
-
-    # # If no subcourses exist (CU type), enforce max class size
-    # if num_subcourses == 0:
-    #     attendance_rate = ATTENDANCE_RATES[level][1]  # Only one year in CU
-    #     num_students = round(n[c] * attendance_rate)
-
-    #     if num_students > MAX_STUDENTS_PER_CLASS:
-    #         num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)
-    #         students_per_sub = num_students // num_subdivisions
-    #         remainder = num_students % num_subdivisions
-
-    #         for j in range(num_subdivisions):
-    #             sub_name = f"{c}_Z{j+1}"
-    #             Y[c].append(sub_name)
-    #             n_y[c][sub_name] = students_per_sub + (1 if j < remainder else 0)
-    #             cfu_y[c][sub_name] = total_cfu  
-    #     else:
-    #         Y[c].append(c)
-    #         n_y[c][c] = num_students
-    #         cfu_y[c][c] = total_cfu
 
 # ================= TIME SLOTS =================
 T = ["M", "E"]
