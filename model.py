@@ -3,21 +3,19 @@ import numpy as np
 from pyomo.environ import *
 from distance import get_distance, load_distance_dictionary
 
-
 # ================= VARIABLE INDEX =================
 WEEKLY_HOURS = 40  # Hours available per classroom per week
 MORNING_HOURS = 4 * 5  # Hours available in the morning
 EVENING_HOURS = 4 * 5  # Hours available in the evening
-SUBCOURSE_CLASS_HOURS = 20  # Required classroom hours per subcourse per week
-SUBCOURSE_LAB_HOURS = 0  # Required lab hours per subcourse per week
-MAX_STUDENTS_PER_CLASS = 250  # Maximum students allowed per subcourse
-WEEK_NUMBER = 12 # Number of weeks in a semester
+MAX_STUDENTS_PER_CLASS = 250 # Maximum students allowed per subcourse
+LAB_PERCENTAGE = 0.40  # Percentage of time dedicated to lab classes
+WEEK_NUMBER = 12  # Number of weeks in a semester
 
 # CFU values per degree type
 CFU_VALUES = {"I": 180, "II": 120, "CU": 300}
 YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": None}
 
-# Attendence rate
+# Attendance rate
 ATTENDANCE_RATES = {
     "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
     "II": {1: 0.7, 2: 0.6},         # Master's (II)
@@ -48,6 +46,7 @@ distance_cache = load_distance_dictionary("Data/distance_dictionary.pkl")
 Y = {c: [] for c in C}  # Dictionary to store subcourses (and sub-subcourses)
 n_y = {c: {} for c in C}  # Dictionary to store student numbers
 cfu_y = {c: {} for c in C}  # Dictionary to store CFU for each subcourse/sub-subcourse
+class_hours_y = {c: {} for c in C}  # Dictionary to store required class hours per week
 
 for c in C:
     level = course_levels[c]  # Get course level (I, II, CU)
@@ -84,10 +83,12 @@ for c in C:
                 Y[c].append(subsub_name)
                 n_y[c][subsub_name] = students_per_sub + (1 if j < remainder else 0)
                 cfu_y[c][subsub_name] = cfu_per_subcourse  # Assign CFU
+                class_hours_y[c][subsub_name] = (cfu_per_subcourse * 8 / WEEK_NUMBER) * (1 - LAB_PERCENTAGE) / 2 #divided by 2 semesters
         else:
             Y[c].append(y)
             n_y[c][y] = num_students
             cfu_y[c][y] = cfu_per_subcourse  
+            class_hours_y[c][y] = (cfu_per_subcourse * 8 / WEEK_NUMBER ) * (1 - LAB_PERCENTAGE) / 2 #divided by 2 semesters
 
 # ================= TIME SLOTS =================
 T = ["M", "E"]
@@ -115,14 +116,11 @@ model.x = Var([(a, y, c, t) for a in A for c in C for y in Y[c] for t in T], wit
 #             for t in T:
 #                 model.seat_capacity.add(model.x[a, y, c, t] * n_y[c][y] <= s[a])
 
-# # Constraint: Ensure required class and lab hours are met
+# Constraint: Ensure required class hours are met
 # model.hour_request = ConstraintList()
 # for c in C:
 #     for y in Y[c]:
-#         model.hour_request.add(sum(g[t] * model.x[a, y, c, t] for a in A for t in T) >= SUBCOURSE_CLASS_HOURS)
-        #model.hour_request.add(sum(g[t] * model.x[a, y, c, t] for a in R for t in T) + model.delta_u[y, c] <= SUBCOURSE_CLASS_HOURS + 3)
-        #model.hour_request.add(sum(g[t] * model.x[a, y, c, t] for a in L for t in T) + model.delta_q[y, c] >= SUBCOURSE_LAB_HOURS)
-        #model.hour_request.add(sum(g[t] * model.x[a, y, c, t] for a in R for t in T) + model.delta_u[y, c] <= SUBCOURSE_LAB_HOURS + 3)
+#         model.hour_request.add(sum(g[t] * model.x[a, y, c, t] for a in A for t in T) >= class_hours_y[c][y])
 
 # Constraint: Each subcourse must be assigned at least one classroom at some time slot
 model.forced_assignment = ConstraintList()
@@ -159,11 +157,11 @@ else:
             distance = get_distance(dept_location, classroom_location, distance_cache)
 
 
-            allocation_results.append([y, a, t, s[a], n_y[c][y], distance, course_levels[c], cfu_y[c][y]])
+            allocation_results.append([y, a, t, s[a], n_y[c][y], distance, course_levels[c], cfu_y[c][y], class_hours_y[c][y]])
 
     # Convert to DataFrame
     df_results = pd.DataFrame(allocation_results, columns=["Subclass Code", "Classroom ID", "Time Slot",
-                                                        "Classroom Capacity", "Class Size", "Distance (km)", "Course Level", "CFU"])
+                                                        "Classroom Capacity", "Class Size", "Distance (km)", "Course Level", "CFU", "Weekly Hours"])
 
     # Save to Excel
     with pd.ExcelWriter("Classroom_Allocation.xlsx") as writer:
