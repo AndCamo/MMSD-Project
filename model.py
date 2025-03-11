@@ -5,10 +5,10 @@ from distance import get_distance, load_distance_dictionary
 
 # ================= VARIABLE INDEX =================
 WEEKLY_HOURS = 40  # Hours available per classroom per week
-MORNING_HOURS = 4 * 5  # Hours available in the morning
-EVENING_HOURS = 4 * 5  # Hours available in the evening
+MORNING_HOURS = 4  # Hours available in the morning
+EVENING_HOURS = 4  # Hours available in the evening
 MAX_STUDENTS_PER_CLASS = 250 # Maximum students allowed per subcourse
-LAB_PERCENTAGE = 0.40  # Percentage of time dedicated to lab classes
+LAB_PERCENTAGE = 0.35  # Percentage of time dedicated to lab classes
 WEEK_NUMBER = 12  # Number of weeks in a semester
 
 # CFU values per degree type
@@ -47,6 +47,7 @@ Y = {c: [] for c in C}  # Dictionary to store subcourses (and sub-subcourses)
 n_y = {c: {} for c in C}  # Dictionary to store student numbers
 cfu_y = {c: {} for c in C}  # Dictionary to store CFU for each subcourse/sub-subcourse
 class_hours_y = {c: {} for c in C}  # Dictionary to store required class hours per week
+attendance_rate_y = {c: {} for c in C} # Dictionary to store attendance rate for each subcourse/sub-subcourse
 
 for c in C:
     level = course_levels[c]  # Get course level (I, II, CU)
@@ -70,8 +71,8 @@ for c in C:
 
     for i, y in enumerate(subcourses):
         year = i + 1
-        attendance_rate = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
-        num_students = round(n[c] * attendance_rate / num_subcourses) if num_subcourses > 0 else round(n[c] * attendance_rate)
+
+        num_students = round(n[c] / num_subcourses) if num_subcourses > 0 else n[c]
 
         if num_students > MAX_STUDENTS_PER_CLASS:
             num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  # Round up
@@ -83,58 +84,61 @@ for c in C:
                 Y[c].append(subsub_name)
                 n_y[c][subsub_name] = students_per_sub + (1 if j < remainder else 0)
                 cfu_y[c][subsub_name] = cfu_per_subcourse  # Assign CFU
-                class_hours_y[c][subsub_name] = (cfu_per_subcourse * 8 / WEEK_NUMBER) * (1 - LAB_PERCENTAGE) / 2 #divided by 2 semesters
+                class_hours_y[c][subsub_name] = (cfu_per_subcourse * 8 / WEEK_NUMBER) / 2 #divided by 2 semesters
+                attendance_rate_y[c][subsub_name] = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
         else:
             Y[c].append(y)
             n_y[c][y] = num_students
             cfu_y[c][y] = cfu_per_subcourse  
-            class_hours_y[c][y] = (cfu_per_subcourse * 8 / WEEK_NUMBER ) * (1 - LAB_PERCENTAGE) / 2 #divided by 2 semesters
+            class_hours_y[c][y] = (cfu_per_subcourse * 8 / WEEK_NUMBER ) / 2 #divided by 2 semesters
+            attendance_rate_y[c][y] = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
 
 # ================= TIME SLOTS =================
 T = ["M", "E"]
-g = {"M": MORNING_HOURS, "E": EVENING_HOURS}
-
+j = {"M": MORNING_HOURS, "E": EVENING_HOURS}
+G = {"Mon", "Tue", "Wed", "Thu", "Fri"}
 # ================= PYOMO MODEL =================
 model = ConcreteModel()
 
 # Decision Variables
-model.x = Var([(a, y, c, t) for a in A for c in C for y in Y[c] for t in T], within=Binary)
+model.x = Var([(a, y, c, g, t) for a in A for c in C for g in G for y in Y[c] for t in T], within=Binary)
 
 # ================= CONSTRAINTS =================
 
-# Constraint: Ensure no room is double-booked at the same time
-# model.unique_assignment = ConstraintList()
-# for a in A:
-#     for t in T:
-#         model.unique_assignment.add(sum(model.x[a, y, c, t] for c in C for y in Y[c]) <= 1)
+# A classroom can be assigned to at most one sub-degree on a given day and time slot.
+model.unique_assignment = ConstraintList()
+for a in A:
+    for g in G:
+        for t in T:
+            model.unique_assignment.add(sum(model.x[a, y, c, g, t] for c in C for y in Y[c]) <= 1)
 
 # Constraint: Seat capacity must be sufficient for students attending the subcourse
-# model.seat_capacity = ConstraintList()
-# for c in C:
-#     for y in Y[c]:
-#         for a in A:
-#             for t in T:
-#                 model.seat_capacity.add(model.x[a, y, c, t] * n_y[c][y] <= s[a])
+model.seat_capacity = ConstraintList()
+for c in C:
+     for y in Y[c]:
+         for a in A:
+             for g in G:
+                for t in T:
+                    model.seat_capacity.add(model.x[a, y, c, g, t] * n_y[c][y] * attendance_rate_y[c][y] <= s[a])
 
 # Constraint: Ensure required class hours are met
-# model.hour_request = ConstraintList()
-# for c in C:
-#     for y in Y[c]:
-#         model.hour_request.add(sum(g[t] * model.x[a, y, c, t] for a in A for t in T) >= class_hours_y[c][y])
-
-# Constraint: Each subcourse must be assigned at least one classroom at some time slot
-model.forced_assignment = ConstraintList()
+model.hour_request = ConstraintList()
 for c in C:
     for y in Y[c]:
-        
-        model.forced_assignment.add(sum(model.x[a, y, c, t] for a in A for t in T) == 1)
+        model.hour_request.add(sum(j[t] * model.x[a, y, c, g, t] for a in A for g in G for t in T) >= class_hours_y[c][y] * (1 - LAB_PERCENTAGE))
+
+# Constraint: Each subcourse must be assigned at least one classroom at some time slot
+# model.forced_assignment = ConstraintList()
+# for c in C:
+#    for y in Y[c]:
+#        model.forced_assignment.add(sum(model.x[a, y, c, g, t] for a in A for g in G for t in T) == 1)
 
 # ================= OBJECTIVE FUNCTION =================
 model.obj = Objective(expr=
-    sum(model.x[a, y, c, t] * get_distance(df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0],
+    sum(model.x[a, y, c, g, t] * get_distance(df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0],
                                            df_rooms.loc[df_rooms["Code"] == a, "Indirizzo"].values[0],
                                            distance_cache)
-        for a in A for c in C for y in Y[c] for t in T),
+        for a in A for c in C for y in Y[c] for g in G for t in T),
     sense=minimize)
 
 
@@ -148,8 +152,8 @@ if results.solver.termination_condition == TerminationCondition.infeasible:
 else:
     # Collect results
     allocation_results = []
-    for (a, y, c, t) in model.x:
-        if model.x[a, y, c, t].value > 0.5:  # If allocated
+    for (a, y, c, g, t) in model.x:
+        if model.x[a, y, c, g, t].value > 0.5:  # If allocated
 
             # Compute the distance between the classroom and the department
             dept_location = df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0]
@@ -157,11 +161,11 @@ else:
             distance = get_distance(dept_location, classroom_location, distance_cache)
 
 
-            allocation_results.append([y, a, t, s[a], n_y[c][y], distance, course_levels[c], cfu_y[c][y], class_hours_y[c][y]])
+            allocation_results.append([y, a, f"{g}-{t}", s[a], n_y[c][y], round(n_y[c][y] * attendance_rate_y[c][y]), distance, course_levels[c], cfu_y[c][y], class_hours_y[c][y], class_hours_y[c][y] * LAB_PERCENTAGE])
 
     # Convert to DataFrame
     df_results = pd.DataFrame(allocation_results, columns=["Subclass Code", "Classroom ID", "Time Slot",
-                                                        "Classroom Capacity", "Class Size", "Distance (km)", "Course Level", "CFU", "Weekly Hours"])
+                                                        "Classroom Capacity", "Number of Students", "Class Size", "Distance (km)", "Course Level", "CFU", "Weekly Hours", "Lab Hours"])
 
     # Save to Excel
     with pd.ExcelWriter("Classroom_Allocation.xlsx") as writer:

@@ -1,0 +1,28 @@
+#degree-button{
+    color: #C1111F;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+#degree-button:hover{
+    color: #003049;
+    font-size: 1.1em;
+    transition: 0.1s linear;
+}
+
+.degree-row:hover{
+    background-color: lightgrey;
+    transition: 0.1s linear;
+}
+
+.content-title{
+    margin: 0 auto;
+    font-weight: bold;
+    color: #C1111F;
+    text-align: center;
+}
+
+#content-title{
+    align-content: center;
+}

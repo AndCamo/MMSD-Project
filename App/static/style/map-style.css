@@ -1,0 +1,46 @@
+#mappa-container {
+    display: none; /* Nascondi inizialmente la mappa */
+    margin: 0 auto;
+    align-content: center;
+}
+
+#mappa {
+
+    height: 60vh;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.punti-lista {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.punto-info {
+    padding: 5px 10px;
+}
+
+#mostra-mappa {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#mostra-mappa:hover {
+    background-color: #45a049;
+}
+
+.loading {
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}

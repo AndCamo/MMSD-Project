@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="../static/style/main-style.css" rel="stylesheet">
+    <link href="../static/style/table-style.css" rel="stylesheet">
+    <link href="../static/style/map-style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f266e86a2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <script src="../static/script/data-script.js"></script>
+    <script src="../static/script/map-script.js"></script>
+</head>
+<body onload="fetchData()">
+
+<div class="container">
+    <div class="main-container m-5">
+        <div class="row degree-container">
+            <div class="col" id="degree-container"></div>
+        </div>
+        <div class="row content-container" id="content-container">
+            <h4 id="result-placeholder">Select a degree! <br> <i class="fa-solid fa-graduation-cap"></i></h4>
+            <div id="content-title" style="width: 100%"></div>
+            <!-- Indicatore di caricamento -->
+            <div id="loading" class="loading">
+                <p>Caricamento della mappa in corso...</p>
+            </div>
+
+
+            <!-- Contenitore della mappa (inizialmente nascosto) -->
+            <div id="mappa-container">
+                <div id="mappa"></div>
+
+                <div class="punti-lista">
+                    <h3>Coordinate visualizzate:</h3>
+                    <ul id="lista-punti"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

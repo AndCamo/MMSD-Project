@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    background-color: #003049;
+}
+
+h1, h2 {
+    font-family: "Space Mono", monospace;
+}
+
+.main-title{
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.main-container{
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    border-radius: 12vh;
+    box-sizing: content-box;
+}
+
+.degree-container{
+    background-color: whitesmoke;
+    height: 30vh;
+    border: #C1111F 1.2vh solid;
+    border-radius: 2vh;
+    box-sizing: content-box;
+    overflow: auto !important;
+}
+
+
+
+.content-container{
+    align-content: center;
+    margin: 0;
+    background-color: whitesmoke;
+    border-radius: 0 0 2vh 2vh;
+    box-sizing: content-box;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 30px;
+    display: flex;
+}
+
+#degree-list{
+    height: 50vh;
+    background-color: red;
+}
+
+#result-placeholder{
+    margin: 2vh auto;
+    text-align: center;
+    color: dimgrey;
+}
+
+.table-row:nth-child(even) {
+    background-color: indianred;
+}
+.table-row:nth-child(odd) {
+    background-color: cadetblue;
+}
+
+
+.content-sep{
+    margin-top: 0.2vh;
+    margin-bottom: 0.2vh;
+    height: 0.2vh;
+}
