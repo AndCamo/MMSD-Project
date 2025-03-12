@@ -5,10 +5,10 @@ from distance import get_distance, load_distance_dictionary
 
 # ================= VARIABLE INDEX =================
 WEEKLY_HOURS = 40  # Hours available per classroom per week
-MORNING_HOURS = 4 * 5  # Hours available in the morning
-EVENING_HOURS = 4 * 5  # Hours available in the evening
-MAX_STUDENTS_PER_CLASS = 250 # Maximum students allowed per subcourse
-LAB_PERCENTAGE = 0.20  # Percentage of time dedicated to lab classes
+MORNING_HOURS = 4  # Hours available in the morning
+EVENING_HOURS = 4  # Hours available in the evening
+MAX_STUDENTS_PER_CLASS = 190 # Maximum students allowed per subcourse
+LAB_PERCENTAGE = 0.15  # Percentage of time dedicated to lab classes
 WEEK_NUMBER = 12  # Number of weeks in a semester
 
 # CFU values per degree type
@@ -18,11 +18,11 @@ YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": None}
 # Attendance rate
 ATTENDANCE_RATES = {
     "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
-    "II": {1: 0.7, 2: 0.6},         # Master's (II)
-    "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.6, 6: 0.55}  # CU Attendance rates for 5/6 years
+    "II": {1: 0.8, 2: 0.7},         # Master's (II)
+    "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.65, 6: 0.65}  # CU Attendance rates for 5/6 years
 }
 
-# ================= LOAD CLASSROOM DATA =================
+# ======================= LOAD CLASSROOM DATA =======================
 df_rooms = pd.read_csv("Data/classroom_dataset.csv", sep=";")
 
 A = df_rooms["Code"].tolist()  # List of all classrooms
@@ -47,6 +47,7 @@ Y = {c: [] for c in C}  # Dictionary to store subcourses (and sub-subcourses)
 n_y = {c: {} for c in C}  # Dictionary to store student numbers
 cfu_y = {c: {} for c in C}  # Dictionary to store CFU for each subcourse/sub-subcourse
 class_hours_y = {c: {} for c in C}  # Dictionary to store required class hours per week
+attendance_rate_y = {c: {} for c in C} # Dictionary to store attendance rate for each subcourse/sub-subcourse
 
 for c in C:
     level = course_levels[c]  # Get course level (I, II, CU)
@@ -70,8 +71,8 @@ for c in C:
 
     for i, y in enumerate(subcourses):
         year = i + 1
-        attendance_rate = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
-        num_students = round(n[c] * attendance_rate / num_subcourses) if num_subcourses > 0 else round(n[c] * attendance_rate)
+
+        num_students = round(n[c] / num_subcourses) if num_subcourses > 0 else n[c]
 
         if num_students > MAX_STUDENTS_PER_CLASS:
             num_subdivisions = -(-num_students // MAX_STUDENTS_PER_CLASS)  # Round up
@@ -83,14 +84,28 @@ for c in C:
                 Y[c].append(subsub_name)
                 n_y[c][subsub_name] = students_per_sub + (1 if j < remainder else 0)
                 cfu_y[c][subsub_name] = cfu_per_subcourse  # Assign CFU
-                class_hours_y[c][subsub_name] = (cfu_per_subcourse * 8 / WEEK_NUMBER) * (1 - LAB_PERCENTAGE) / 2 #divided by 2 semesters
+                class_hours_y[c][subsub_name] = (cfu_per_subcourse * 8 / WEEK_NUMBER) / 2 #divided by 2 semesters
+                attendance_rate_y[c][subsub_name] = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
         else:
             Y[c].append(y)
             n_y[c][y] = num_students
             cfu_y[c][y] = cfu_per_subcourse
-            class_hours_y[c][y] = (cfu_per_subcourse * 8 / WEEK_NUMBER ) * (1 - LAB_PERCENTAGE) / 2 #divided by 2 semesters
+            class_hours_y[c][y] = (cfu_per_subcourse * 8 / WEEK_NUMBER ) / 2 #divided by 2 semesters
+            attendance_rate_y[c][y] = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
 
 
-for course in Y:
-    for subcourse in Y[course]:
-        print(f"{course} \t {subcourse} \t {n_y[course][subcourse]} \t {class_hours_y[course][subcourse]}")
+datalist = []
+for c in C:
+     for y in Y[c]:
+         new_row = {
+             "Code" : y,
+             "Degree Name": df_courses.loc[df_courses["COD"] == c, "Denominazione CdS"].values[0],
+             "N. Enrolled Students": n_y[c][y],
+             "Total Degree Students" : n[c]
+         }
+
+         datalist.append(list(new_row.values()))
+
+df_results = pd.DataFrame(datalist, columns=["Code", "Degree Name", "N. Enrolled Students", "Total Degree Students"])
+
+df_results.to_csv("/Users/andrea/Desktop/test.csv", index=False)

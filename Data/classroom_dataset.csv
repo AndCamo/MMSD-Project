@@ -390,9 +390,9 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 390;Molinette Via Genova 3;Aula Biancalana;Via Genova, 3, Torino;45.0412363, 7.6725138;99;0;0;0;1;0;1;1;1;1;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
 391;Molinette Via Genova 3;Aula Favretto;Via Genova, 3, Torino;45.0412363, 7.6725138;39;0;0;1;1;0;1;1;0;0;0;0;0;1;1;1;1;0;1;1;0;0;0;0;1
 392;Molinette Via Genova 3;Aula Magna di Medicina Interna - MI1;Via Genova, 3, Torino;45.0412363, 7.6725138;99;0;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
-393;Molinette Via Genova 3;Aula Magna di Otorinolaringoiatria - INAGIBILE;Via Genova, 3, Torino;45.0412363, 7.6725138;150;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+393;Molinette Via Genova 3;Aula Magna di Otorinolaringoiatria;Via Genova, 3, Torino;45.0412363, 7.6725138;150;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 394;Molinette Via Genova 3;Aula Radiologia Rad;Via Genova, 3, Torino;45.0412363, 7.6725138;99;0;0;0;1;0;1;0;0;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
-395;Molinette Via Genova 3;Auletta di ORL - INAGIBILE;Via Genova, 3, Torino;45.0412363, 7.6725138;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+395;Molinette Via Genova 3;Auletta di ORL;Via Genova, 3, Torino;45.0412363, 7.6725138;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 396;Molinette Via Santena 5bis;Aula Magna di Igiene;Via Santena, 5 bis, Torino;45.0372117, 7.6742235;120;0;0;1;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 397;Molinette Via Santena 5bis;Auletta A;Via Santena, 5 bis, Torino;45.0372117, 7.6742235;20;n.d.;0;1;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
 398;Molinette Via Santena 5bis;Auletta B;Via Santena, 5 bis, Torino;45.0372117, 7.6742235;12;n.d.;0;1;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
@@ -451,7 +451,7 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 451;Palazzo Campana;Aula B7;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;25;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 452;Palazzo Campana;Aula C;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;50;50;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
 453;Palazzo Campana;Aula Informatica 2;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;28;17;1;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-454;Palazzo Campana;Aula Informatica 5 - INAGIBILE;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;96;48;1;1;1;0;0;1;1;1;1;1;0;1;0;1;1;0;1;1;0;0;1;0;0
+454;Palazzo Campana;Aula Informatica 5;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;96;48;1;1;1;0;0;1;1;1;1;1;0;1;0;1;1;0;1;1;0;0;1;0;0
 455;Palazzo Campana;Aula Istologia;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 456;Palazzo Campana;Aula Lagrange;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;35;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 457;Palazzo Campana;Aula Lessona;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;25;0;0;0;0;0;0;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1

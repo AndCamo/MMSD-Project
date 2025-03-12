@@ -7,8 +7,8 @@ from distance import get_distance, load_distance_dictionary
 WEEKLY_HOURS = 40  # Hours available per classroom per week
 MORNING_HOURS = 4  # Hours available in the morning
 EVENING_HOURS = 4  # Hours available in the evening
-MAX_STUDENTS_PER_CLASS = 250 # Maximum students allowed per subcourse
-LAB_PERCENTAGE = 0.35  # Percentage of time dedicated to lab classes
+MAX_STUDENTS_PER_CLASS = 180 # Maximum students allowed per subcourse
+LAB_PERCENTAGE = 0.25  # Percentage of time dedicated to lab classes
 WEEK_NUMBER = 12  # Number of weeks in a semester
 
 # CFU values per degree type
@@ -18,11 +18,11 @@ YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": None}
 # Attendance rate
 ATTENDANCE_RATES = {
     "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
-    "II": {1: 0.7, 2: 0.6},         # Master's (II)
-    "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.6, 6: 0.55}  # CU Attendance rates for 5/6 years
+    "II": {1: 0.8, 2: 0.7},         # Master's (II)
+    "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.65, 6: 0.65}  # CU Attendance rates for 5/6 years
 }
 
-# ================= LOAD CLASSROOM DATA =================
+# ======================= LOAD CLASSROOM DATA =======================
 df_rooms = pd.read_csv("Data/classroom_dataset.csv", sep=";")
 
 A = df_rooms["Code"].tolist()  # List of all classrooms
@@ -153,19 +153,37 @@ else:
     # Collect results
     allocation_results = []
     for (a, y, c, g, t) in model.x:
-        if model.x[a, y, c, g, t].value > 0.5:  # If allocated
+        if model.x[a, y, c, g, t].value == 1:  # If allocated
 
             # Compute the distance between the classroom and the department
             dept_location = df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0]
             classroom_location = df_rooms.loc[df_rooms["Code"] == a, "Indirizzo"].values[0]
             distance = get_distance(dept_location, classroom_location, distance_cache)
 
+            new_result = {
+                "Subclass Code" : y,
+                "Degree Name" : df_courses.loc[df_courses["COD"] == "0208M21-23", "Denominazione CdS"].values[0],
+                "Course Level" : course_levels[c],
+                "Classroom ID" : a,
+                "Day" : g,
+                "Time Slot" : t,
+                "Classroom Capacity" : s[a],
+                "N.Attending Students" : round(n_y[c][y] * attendance_rate_y[c][y]),
+                "N. Enrolled Students" : n_y[c][y],
+                "Distance (km)" : distance,
+                "Total Hour Request" : class_hours_y[c][y],
+                "Normal Hours" : class_hours_y[c][y] * (1 - LAB_PERCENTAGE),
+                "Lab Hours" : class_hours_y[c][y] * LAB_PERCENTAGE
+            }
 
-            allocation_results.append([y, a, f"{g}-{t}", s[a], n_y[c][y], round(n_y[c][y] * attendance_rate_y[c][y]), distance, course_levels[c], cfu_y[c][y], class_hours_y[c][y], class_hours_y[c][y] * LAB_PERCENTAGE])
+
+            allocation_results.append(list(new_result.values()))
 
     # Convert to DataFrame
-    df_results = pd.DataFrame(allocation_results, columns=["Subclass Code", "Classroom ID", "Time Slot",
-                                                        "Classroom Capacity", "Number of Students", "Class Size", "Distance (km)", "Course Level", "CFU", "Weekly Hours", "Lab Hours"])
+    df_results = pd.DataFrame(allocation_results, columns=["Subclass Code", "Degree Name", "Course Level",
+                                                           "Classroom ID", "Day", "Time Slot", "Classroom Capacity",
+                                                           "N.Attending Students", "N. Enrolled Students", "Distance (km)",
+                                                           "Total Hour Request", "Normal Hours", "Lab Hours"])
 
     # Save to Excel
     with pd.ExcelWriter("Classroom_Allocation.xlsx") as writer:
