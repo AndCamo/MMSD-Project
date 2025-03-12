@@ -162,7 +162,7 @@ else:
 
             new_result = {
                 "Subclass Code" : y,
-                "Degree Name" : df_courses.loc[df_courses["COD"] == "0208M21-23", "Denominazione CdS"].values[0],
+                "Degree Name" : df_courses.loc[df_courses["COD"] == c, "Denominazione CdS"].values[0],
                 "Course Level" : course_levels[c],
                 "Classroom ID" : a,
                 "Day" : g,
