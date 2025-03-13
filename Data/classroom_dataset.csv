@@ -87,36 +87,16 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 86;Campus Samev;CD1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;1;0;1;1;1;0;0;0;0;1;0;1;1;0;1;1;0;0;0;0;1
 87;Campus Samev;CD2;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 88;Campus Samev;CD3;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;24;0;0;0;1;0;1;1;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-89;Campus Samev;Clinical Skill Lab 1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;80;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
 90;Campus Samev;Economia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;10;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;0;1;1;0;0;0;0;0
 91;Campus Samev;Godina;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;100;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;1;1
 92;Campus Samev;Informatica PT- ATRIO - DISAFA;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;18;17;1;0;1;0;1;0;1;0;0;0;0;1;0;1;1;0;1;1;1;0;0;0;1
-93;Campus Samev;Lab. Analisi Sensoriali;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;22;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-94;Campus Samev;Lab. Analisi strumentale - Tec. Alimentari;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-95;Campus Samev;Lab. Analisi Territoriale (GIS) AREA MENSA - Info;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;19;19;1;0;1;1;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-96;Campus Samev;Lab. Chimica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;60;0;0;0;0;0;1;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
-97;Campus Samev;Lab. Entomologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;48;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 98;Campus Samev;Lab. Informatico 1 grande (DSV)- Thin Client;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;55;29;1;0;1;0;0;0;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-99;Campus Samev;Lab. Informatico 2 piccolo (DSV) - Thin Client;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;40;22;1;0;1;0;0;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-100;Campus Samev;Laboratorio Biologico;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-101;Campus Samev;Laboratorio Chimico 1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;43;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-102;Campus Samev;Laboratorio Chimico 2;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;22;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
 103;Campus Samev;Laboratorio Patologia-Microbiologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;1;1;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
-104;Campus Samev;Micheletto;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;99;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
-105;Campus Samev;Microscopi multipli;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 106;Campus Samev;Microscopi singoli;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;45;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
 107;Campus Samev;Monti;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;70;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
 108;Campus Samev;Ospedale 1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;100;0;0;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 109;Campus Samev;Romisondo;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
 110;Campus Samev;Sala Colonne;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
-111;Campus Samev;Sala Osteologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-112;Campus Samev;Sala Riunioni Anatomia Patologica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-113;Campus Samev;Sala Riunioni Farmacologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-114;Campus Samev;Sala Riunioni Infettive;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-115;Campus Samev;Sala Riunioni Ispezione Alimenti;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;15;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-116;Campus Samev;Sala Riunioni Parassitologia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;20;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-117;Campus Samev;Sala Riunioni SDSV;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;30;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-118;Campus Samev;Sala Riunioni Zootecnia;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;10;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 119;Campus Samev;Sala Settoria Anatomia Normale;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;40;0;0;0;0;0;1;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
 120;Campus Samev;Sala Settoria Anatomia Patologica;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;120;0;0;0;1;0;1;1;0;0;1;0;0;1;0;0;1;0;1;1;0;0;1;0;1
 121;Campus Samev;Samev  1;Largo Paolo Braccini, 2, Grugliasco;45.0671764, 7.591895900457507;72;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;1;1;1;1;1
@@ -150,8 +130,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 149;Centro dell'Innovazione;Aula 19;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;96;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 150;Centro dell'Innovazione;Aula 20;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;80;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 151;Centro dell'Innovazione;Aula 21;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;138;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
-152;Centro dell'Innovazione;Aula Informatica 16;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;40;21;1;0;1;0;1;1;1;1;0;0;0;1;0;1;1;0;1;1;0;0;0;1;1
-153;Centro dell'Innovazione;Laboratorio 1;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;40;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;0
 154;Centro dell'Innovazione;Laboratorio 6;Via Quarello, 15/A, Torino;45.0175134, 7.6169833;40;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;1
 155;Cinema Greenwich;Aula 1 Greenwich (PRENOTABILE 8-14);Via Po, 30, Torino;45.0670781, 7.6915839;250;n.d.;0;0;1;0;0;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 156;Cinema Greenwich;Aula 2 Greenwich (PRENOTABILE 8-14);Via Po, 30, Torino;45.0670781, 7.6915839;120;n.d.;0;0;1;0;0;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
@@ -209,7 +187,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 208;Corso M.D'Azeglio 52;Aula Magna Ex Medicina Legale - Cesare Lombroso - INAGIBILE;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;99;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 209;Corso M.D'Azeglio 52;Sala Settoria;Corso Massimo D'Azeglio, 52, Torino;45.0494947, 7.6804523;75;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
 210;Corso Raffaello 30;Auletta Morpurgo;Corso Raffaello, 30, Torino;45.0505629, 7.6807729;25;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
-211;Corso Raffaello 30;Laboratorio Biochimico;Corso Raffaello, 30, Torino;45.0505629, 7.6807729;20;n.d.;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
 212;Dipartimento di Chimica;Aula AG3 Ingresso da via Michelangelo 32;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;35;0;0;1;0;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
 213;Dipartimento di Chimica;Aula Avogadro;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;80;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
 214;Dipartimento di Chimica;Aula Cannizzaro;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;80;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;0;0;1
@@ -219,10 +196,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 218;Dipartimento di Chimica;Aula Magna di Chimica;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;200;0;0;0;1;0;1;1;1;1;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
 219;Dipartimento di Chimica;Auletta I;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;20;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 220;Dipartimento di Chimica;Auletta II;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;20;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-221;Dipartimento di Chimica;Laboratorio di Analisi Strumentale;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-222;Dipartimento di Chimica;Laboratorio di Analitica;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;80;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-223;Dipartimento di Chimica;Laboratorio di Preparazioni Inorganiche;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;50;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-224;Dipartimento di Chimica;Laboratorio di Sintesi Organica;Via Pietro Giuria, 7, Torino;45.051487, 7.6809388;40;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 225;Dipartimento di Fisica;Aula A;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;133;1;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
 226;Dipartimento di Fisica;Aula Avogadro;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;37;1;0;1;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 227;Dipartimento di Fisica;Aula C;Via Pietro Giuria, 1, Torino;45.0520181, 7.681774250802235;96;1;1;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
@@ -245,7 +218,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 244;Dipartimento di Informatica;Aula F;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;108;1;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
 245;Dipartimento di Informatica;Aula J. L. Von Neumann Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;60;30;1;0;1;0;0;0;0;0;1;0;0;1;1;0;1;0;1;1;0;0;0;0;0
 246;Dipartimento di Informatica;Aula J. Postel Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;18;12;1;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
-247;Dipartimento di Informatica;Laboratorio di sperimentazioni avanzate C. Babbage Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;20;13;1;0;1;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
 248;Dipartimento di Informatica;Sala conferenze Dipartimento di Informatica;Via Pessinetto, 12, Torino;45.0899689, 7.6591649;80;0;0;0;1;0;0;0;0;1;0;0;0;0;1;0;1;0;1;1;0;0;0;0;0
 249;Dipartimento di Oncologia V.Michelangelo 27;"Aula A ""Lenti"" Biochimica";Via Michelangelo, 27, Torino;45.0499694, 7.6808209;99;0;0;0;1;0;1;1;1;1;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
 250;Dipartimento di Oncologia V.Michelangelo 27;Aula B Biomichimica;Via Michelangelo, 27, Torino;45.0499694, 7.6808209;99;0;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
@@ -257,7 +229,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 256;Dipartimento di Scienze della Terra;Aula Seminterrato;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 257;Dipartimento di Scienze della Terra;Aula Sturani;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;14;0;0;0;1;0;1;0;1;0;0;1;0;0;1;0;1;0;1;0;0;1;1;1;1
 258;Dipartimento di Scienze della Terra;Aula Vallauri;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;96;n.d.;0;1;1;0;1;1;0;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
-259;Dipartimento di Scienze della Terra;Auletta Microscopi;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;15;0;0;0;0;0;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
 260;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 1;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;1;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 261;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 2;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;34;1;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 262;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula 4 Informatica;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;24;24;1;0;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;1;1
@@ -270,9 +241,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 269;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula Mobile Mac;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;9;9;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
 270;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula notebook Acer Dbios;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;40;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
 271;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Aula Studenti Informatica;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;9;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-272;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Laboratorio Biochimico;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;2;0;0;1;0;1;0;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
-273;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Laboratorio Culture Cellulari;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;12;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0
-274;Dipartimento di Scienze della Vita e Biologia dei Sistemi;Laboratorio Morfologico;Via Valperga Caluso, 35, Torino;45.0525434, 7.6817193;40;40;0;0;1;0;1;0;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 275;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Aula Magna - ex DBV;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;100;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
 276;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Auletta I;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;35;0;0;0;1;0;1;1;1;0;1;0;0;1;1;1;1;0;1;1;0;0;0;0;1
 277;Dipartimento di Scienze della Vita e Biologia dei Sistemi - Sede Viale Mattioli;Auletta II;Viale Pier Andrea Mattioli, 25, Torino;45.05528, 7.6860564;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
@@ -589,9 +557,6 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 589;School of Management - SAA;Aula Master (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;60;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
 590;School of Management - SAA;Laboratorio Informatico 1 (Corridoio D);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;70;36;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
 591;School of Management - SAA;Laboratorio Informatico 2 (Corridoio B);Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;20;21;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
-592;School of Management - SAA;Sala Consiglio;Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;48;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
-593;School of Management - SAA;Sala Presidenza;Via Ventimiglia, 115, Torino;45.0265155, 7.6693435;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
-594;SME - Edificio Storico;Atrio Monumentale;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;250;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
 595;SME - Edificio Storico;"Aula ""G Ferrero""";Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;n.d.;0;1;1;1;1;1;1;0;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 596;SME - Edificio Storico;"Aula ""O. Volpatto""";Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;n.d.;0;1;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 597;SME - Edificio Storico;"Aula ""S. Ricossa""";Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;32;n.d.;0;1;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
@@ -620,12 +585,8 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 620;SME - Edificio Storico;Aula Onida;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;42;0;0;1;1;1;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 621;SME - Edificio Storico;Aula R. Corradetti;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;100;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 622;SME - Edificio Storico;Aula Stanford;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;24;0;0;1;1;1;0;0;1;0;0;1;0;1;0;0;1;0;1;1;0;0;0;0;0
-623;SME - Edificio Storico;DATALAB Alessandro Sembenelli;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;3;n.d.;1;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;1;1;0;0;0;1;1
-624;SME - Edificio Storico;Direzione Scuola;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;14;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;1;0;1;1;0;0;0;1;1
 625;SME - Edificio Storico;Laboratorio E Thin Client;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;16;16;1;1;0;1;1;0;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 626;SME - Edificio Storico;Sala Lauree;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;25;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-627;SME - Edificio Storico;Sala Riunioni;Corso Unione Sovietica, 218 bis, Torino;45.0380931, 7.6515426;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
-628;SME - Nuovo Polo Didattico;Atrio NPD;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;200;n.d.;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0
 629;SME - Nuovo Polo Didattico;Aula Azzurra;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;132;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;0;1;1
 630;SME - Nuovo Polo Didattico;Aula Blu Tosetti Value;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;424;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
 631;SME - Nuovo Polo Didattico;Aula Gialla;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;424;0;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;1;1
@@ -641,10 +602,8 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 641;SME - Nuovo Polo Didattico;Auletta Torino;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 642;SME - Nuovo Polo Didattico;Auletta Verbania;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;12;0;0;1;1;0;1;1;1;0;0;1;0;1;1;0;1;0;1;1;0;1;1;1;1
 643;SME - Nuovo Polo Didattico;Auletta Vercelli;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
-644;SME - Nuovo Polo Didattico;Spazio antistante aule Rosa e Azzurra;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;100;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 646;Torino Esposizioni;Aula ToExpo - TE 8;Corso Massimo D'Azeglio, 15/b, Torino;45.0493962, 7.6815192;150;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 647;Via Giuria 15;Aula Microscopi;Via Pietro Giuria, 15, Torino;45.0497552, 7.6797632;30;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
-648;Via Giuria 15;Laboratorio Didattico per esercitazioni di Anatomia;Via Pietro Giuria, 15, Torino;45.0497552, 7.6797632;30;n.d.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 649;Via Michelangelo 25;Aula Magna Bizzozzero Patologia Generale;Via Michelangelo, 25, Torino;45.064833300000004, 7.583097100000002;99;0;0;0;1;0;1;1;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 650;Via Sant'Ottavio 54;Aula 1.03;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
 651;Via Sant'Ottavio 54;Aula 1.05;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;70;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
