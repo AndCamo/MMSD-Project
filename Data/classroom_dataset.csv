@@ -409,28 +409,28 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 441;Palazzo Badini;Sala Lauree;Via Verdi, 10, Torino;45.0691151, 7.6898971;70;1;0;0;1;0;1;1;1;1;1;1;1;1;1;0;1;0;1;1;0;0;1;1;1
 442;Palazzo Badini;Sala Riunioni Massucco Costa;Via Verdi, 10, Torino;45.0691151, 7.6898971;50;1;0;0;1;0;1;1;0;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
 443;Palazzo Badini;Sala Seminari;Via Verdi, 10, Torino;45.0691151, 7.6898971;60;1;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
-444;Palazzo Campana;Aula 1;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;37;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-445;Palazzo Campana;Aula 2;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;32;0;0;0;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-446;Palazzo Campana;Aula 3;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;32;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-447;Palazzo Campana;Aula 4;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;49;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-448;Palazzo Campana;Aula 5;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;32;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-449;Palazzo Campana;Aula A;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;160;0;0;0;1;0;1;1;1;0;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
-450;Palazzo Campana;Aula B6;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;24;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-451;Palazzo Campana;Aula B7;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;25;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-452;Palazzo Campana;Aula C;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;50;50;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
-453;Palazzo Campana;Aula Informatica 2;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;28;17;1;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-454;Palazzo Campana;Aula Informatica 5;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;96;48;1;1;1;0;0;1;1;1;1;1;0;1;0;1;1;0;1;1;0;0;1;0;0
-455;Palazzo Campana;Aula Istologia;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-456;Palazzo Campana;Aula Lagrange;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;35;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-457;Palazzo Campana;Aula Lessona;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;25;0;0;0;0;0;0;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-458;Palazzo Campana;Aula Lodi;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;16;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-459;Palazzo Campana;Aula Magna;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;99;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
-460;Palazzo Campana;Aula Marro;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-461;Palazzo Campana;Aula Monod;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;36;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
-462;Palazzo Campana;Aula Spallanzani;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;160;123;1;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
-463;Palazzo Campana;Sala Orsi;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;27;0;0;0;1;0;1;1;0;1;0;0;0;1;1;0;1;0;1;1;0;1;1;0;1
-464;Palazzo Campana;Sala Professori;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-465;Palazzo Campana;Sala S;Via Carlo Alberto, 10, Torino;45.0118674, 7.8257177;45;0;0;0;1;0;1;1;1;0;0;0;1;1;1;1;1;0;1;1;0;0;0;0;1
+444;Palazzo Campana;Aula 1;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;37;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+445;Palazzo Campana;Aula 2;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;32;0;0;0;1;0;1;1;1;0;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+446;Palazzo Campana;Aula 3;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;32;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+447;Palazzo Campana;Aula 4;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;49;0;0;0;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+448;Palazzo Campana;Aula 5;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;32;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+449;Palazzo Campana;Aula A;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;160;0;0;0;1;0;1;1;1;0;1;0;1;1;1;1;1;0;1;1;0;0;1;1;1
+450;Palazzo Campana;Aula B6;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;24;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+451;Palazzo Campana;Aula B7;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;25;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+452;Palazzo Campana;Aula C;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;50;50;0;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;1;1;1;1
+453;Palazzo Campana;Aula Informatica 2;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;28;17;1;0;1;0;1;1;1;0;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+454;Palazzo Campana;Aula Informatica 5;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;96;48;1;1;1;0;0;1;1;1;1;1;0;1;0;1;1;0;1;1;0;0;1;0;0
+455;Palazzo Campana;Aula Istologia;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+456;Palazzo Campana;Aula Lagrange;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;35;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+457;Palazzo Campana;Aula Lessona;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;25;0;0;0;0;0;0;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+458;Palazzo Campana;Aula Lodi;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;16;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+459;Palazzo Campana;Aula Magna;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;99;0;0;0;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
+460;Palazzo Campana;Aula Marro;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;30;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+461;Palazzo Campana;Aula Monod;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;36;0;0;0;0;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+462;Palazzo Campana;Aula Spallanzani;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;160;123;1;0;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;1;1
+463;Palazzo Campana;Sala Orsi;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;27;0;0;0;1;0;1;1;0;1;0;0;0;1;1;0;1;0;1;1;0;1;1;0;1
+464;Palazzo Campana;Sala Professori;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;15;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+465;Palazzo Campana;Sala S;Via Carlo Alberto, 10, Torino;45.0681663, 7.6855355;45;0;0;0;1;0;1;1;1;0;0;0;1;1;1;1;1;0;1;1;0;0;0;0;1
 466;Palazzo Nuovo;Auditorium Quazza (no prenot);Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;72;0;0;0;1;0;1;0;0;1;1;0;1;1;1;0;1;0;1;1;0;0;1;1;1
 467;Palazzo Nuovo;Aula 1;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;480;0;0;0;1;0;1;1;0;0;0;1;1;1;0;1;1;0;1;1;0;0;1;1;1
 468;Palazzo Nuovo;Aula 10;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;50;0;0;0;1;0;1;1;1;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
@@ -470,36 +470,36 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 502;Palazzo Nuovo;Sala Lauree ex Lettere;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;56;0;0;0;1;0;1;1;0;1;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 503;Palazzo Nuovo;Sala Lauree Gallino (no prenot);Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;35;0;0;0;1;0;1;0;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 504;Palazzo Nuovo;Sala Lauree Terracini;Via Sant'Ottavio, 20, Torino;45.067977, 7.6941289;113;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;1;1
-505;Palazzo Simoni;Aula 301;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-506;Palazzo Simoni;Aula 302;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-507;Palazzo Simoni;Aula 304;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-508;Palazzo Simoni;Aula 305;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-509;Palazzo Simoni;Aula 306;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-510;Palazzo Simoni;Aula 307;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-511;Palazzo Simoni;Aula 308;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-512;Palazzo Simoni;Aula 309;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-513;Palazzo Simoni;Aula 310;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-514;Palazzo Simoni;Aula 311;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-515;Palazzo Simoni;Aula 312;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-516;Palazzo Simoni;Aula 313;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-517;Palazzo Simoni;Aula 314;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-518;Palazzo Simoni;Aula 315;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-519;Palazzo Simoni;Aula 316;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-520;Palazzo Simoni;Aula 317;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;18;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-521;Palazzo Simoni;Aula 318;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-522;Palazzo Simoni;Aula 319;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-523;Palazzo Simoni;Aula 320;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-524;Palazzo Simoni;Aula 321;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-525;Palazzo Simoni;Aula 322;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-526;Palazzo Simoni;Aula 323;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-527;Palazzo Simoni;Aula 324;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-528;Palazzo Simoni;Aula 325;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-529;Palazzo Simoni;Aula 326;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-530;Palazzo Simoni;Aula 327;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-531;Palazzo Simoni;Aula 329;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-532;Palazzo Simoni;Aula 331;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-533;Palazzo Simoni;Aula A5;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;72;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-534;Palazzo Simoni;Aula_303;Corso Galileo Ferraris, 29, Torino;45.055533, 7.6639525;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+505;Palazzo Simoni;Aula 301;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+506;Palazzo Simoni;Aula 302;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+507;Palazzo Simoni;Aula 304;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+508;Palazzo Simoni;Aula 305;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+509;Palazzo Simoni;Aula 306;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+510;Palazzo Simoni;Aula 307;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+511;Palazzo Simoni;Aula 308;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+512;Palazzo Simoni;Aula 309;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+513;Palazzo Simoni;Aula 310;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+514;Palazzo Simoni;Aula 311;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+515;Palazzo Simoni;Aula 312;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+516;Palazzo Simoni;Aula 313;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+517;Palazzo Simoni;Aula 314;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+518;Palazzo Simoni;Aula 315;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+519;Palazzo Simoni;Aula 316;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+520;Palazzo Simoni;Aula 317;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;18;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+521;Palazzo Simoni;Aula 318;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+522;Palazzo Simoni;Aula 319;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+523;Palazzo Simoni;Aula 320;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+524;Palazzo Simoni;Aula 321;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+525;Palazzo Simoni;Aula 322;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+526;Palazzo Simoni;Aula 323;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+527;Palazzo Simoni;Aula 324;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+528;Palazzo Simoni;Aula 325;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+529;Palazzo Simoni;Aula 326;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+530;Palazzo Simoni;Aula 327;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+531;Palazzo Simoni;Aula 329;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;20;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+532;Palazzo Simoni;Aula 331;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+533;Palazzo Simoni;Aula A5;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;72;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+534;Palazzo Simoni;Aula_303;Corso Galileo Ferraris, 29, Torino;45.066938, 7.6722182;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 535;Palazzo Venturi;Aula 1A Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;93;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
 536;Palazzo Venturi;Aula 1B Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;43;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
 537;Palazzo Venturi;Aula 2A Venturi;Via Verdi, 25, Torino;45.0687566, 7.6916649;37;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0
@@ -604,7 +604,7 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 643;SME - Nuovo Polo Didattico;Auletta Vercelli;Via Filadelfia, 73, Torino;45.0455434, 7.6347954;20;0;0;1;1;0;1;1;1;0;0;0;0;1;0;0;1;0;1;1;0;0;0;1;1
 646;Torino Esposizioni;Aula ToExpo - TE 8;Corso Massimo D'Azeglio, 15/b, Torino;45.0493962, 7.6815192;150;0;0;0;1;0;1;1;1;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 647;Via Giuria 15;Aula Microscopi;Via Pietro Giuria, 15, Torino;45.0497552, 7.6797632;30;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
-649;Via Michelangelo 25;Aula Magna Bizzozzero Patologia Generale;Via Michelangelo, 25, Torino;45.064833300000004, 7.583097100000002;99;0;0;0;1;0;1;1;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
+649;Via Michelangelo 25;Aula Magna Bizzozzero Patologia Generale;Via Michelangelo, 25, Torino;45.05019448125958, 7.680096849559089;99;0;0;0;1;0;1;1;0;1;1;0;0;1;0;0;1;0;1;1;0;0;0;0;1
 650;Via Sant'Ottavio 54;Aula 1.03;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;20;0;0;0;1;0;1;1;1;0;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
 651;Via Sant'Ottavio 54;Aula 1.05;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;70;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1
 652;Via Sant'Ottavio 54;Aula 1.13;Via Sant'Ottavio, 54, Torino;45.0710577, 7.6973834;40;0;0;0;1;0;1;1;1;1;0;0;1;1;0;0;1;0;1;1;0;0;0;1;1

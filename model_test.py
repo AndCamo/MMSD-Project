@@ -33,7 +33,9 @@ s = dict(zip(df_rooms["Code"], df_rooms["Capienza"]))  # Classroom capacities
 h = dict(zip(df_rooms["Code"], np.full(len(df_rooms), WEEKLY_HOURS)))  # Available hours per week
 
 # ================= LOAD COURSE DATA =================
-df_courses = pd.read_csv("Data/degree_dataset.csv", sep=";")
+df_courses = pd.read_csv("Data/degree_dataset_old.csv", sep=";")
+
+#df_courses = df_courses_complete[df_courses_complete["Modalita didattica"] == "convenzionale"]
 
 C = df_courses["COD"].tolist()  # List of courses
 n = dict(zip(df_courses["COD"], df_courses["Participants"]))  # Number of students per course

@@ -19,7 +19,10 @@ async function getAssignedClassroom(degree_id){
                     lat: coodinates[0],
                     lng : coodinates[1],
                     name: CLASSROOM_DATASET[i]["Aula"],
-                    building: CLASSROOM_DATASET[i]["Edificio"]
+                    building: CLASSROOM_DATASET[i]["Edificio"],
+                    distance: result["Distance (km)"],
+                    code: CLASSROOM_DATASET[i]["Code"],
+                    timeslot:  result["Day"] + "-" + result["Time Slot"]
                 }
                 classroom_data.push(new_classroom)
             }
@@ -50,7 +53,7 @@ async function fetchData() {
         degree_name = degree["Denominazione CdS"];
 
         let degree_code_string = "'" + degree_code +"'";
-        let degree_name_string = "'" + degree["Denominazione CdS"].toString() +"'";
+        let degree_name_string = "'" + degree["Denominazione CdS"].toString().replaceAll("'", " ") +"'";
         let new_row =
             '<div class="row p-2 degree-row">' +
                '<div class="col-8">' + degree_name +'</div>' +
@@ -87,19 +90,55 @@ async function showContent(degree_id, degree_name){
         placeholder.style.display = "none";
     }
     let classroom_assigned = await getAssignedClassroom(degree_id);
-    let department_location = {
-        lat: 0, lng: 0, name: degree_name, building: ""
+    let department_info = {
+        lat: 0, lng: 0, name: degree_name, building: "", department_name: "",
+        department_location: "", degree_level: "", number_of_students: 0
     }
     for (let degree of DEGREE_DATASET){
         if (degree["COD"] == degree_id){
-            department_location.building = degree["Dipartimento"];
+            department_info.building = degree["Dipartimento"];
             let coordinates = degree["Coordinate"].toString().split(", ");
             let coordinates_shifted = await shiftCoordinates(coordinates[0], coordinates[1])
-            department_location.lat = coordinates_shifted[0];
-            department_location.lng = coordinates_shifted[1];
+            department_info.lat = coordinates_shifted[0];
+            department_info.lng = coordinates_shifted[1];
+            department_info.department_name = degree["Dipartimento"];
+            department_info.degree_level = degree["Livello"];
+            department_info.number_of_students = degree["Participants"];
+            department_info.department_location = degree["Sede Dipartimento"];
         }
     }
 
     $("#content-title").html(`<h4 class='content-title'>Assigments for ${degree_name}</h4>`);
-    inizializzaMappa(classroom_assigned, department_location);
+
+    await inizializzaMappa(classroom_assigned, department_info);
+
+    $("#assignments-container").css("display", "block");
+    $("#department-value").text(department_info.department_name);
+    $("#department-hq-value").text(department_info.department_location);
+    $("#student-number-value").text(department_info.number_of_students);
+    $("#degree-level-value").text(department_info.degree_level);
+
+    let assignments_container = document.getElementById("assignments-infobox");
+    assignments_container.innerHTML = "                    " +
+                "<div class=\"row header\">\n" +
+                    "<div class=\"col-1\">ID</div>\n" +
+                    "<div class=\"col-4\">Class Name</div>\n" +
+                    "<div class=\"col-3\">Building</div>\n" +
+                    "<div class=\"col-2\">Time Slot</div>\n" +
+                    "<div class=\"col-2\">Distance</div>\n" +
+                "</div>"
+    classroom_assigned.forEach(classroom => {
+        console.log(classroom.toString());
+        let new_row = `
+                    <div class="row assignment-row">
+                        <div class="col-1">${classroom["code"]}</div>
+                        <div class="col-4">${classroom["name"]}</div>
+                        <div class="col-3">${classroom["building"]}</div>
+                        <div class="col-2">${classroom["timeslot"]}</div>
+                        <div class="col-2">${classroom["distance"]}</div>
+                    </div>`;
+
+        assignments_container.innerHTML += new_row;
+    });
+
 }

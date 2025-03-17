@@ -8,6 +8,7 @@
     <link href="../static/style/main-style.css" rel="stylesheet">
     <link href="../static/style/table-style.css" rel="stylesheet">
     <link href="../static/style/map-style.css" rel="stylesheet">
+    <link href="../static/style/content-style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2f266e86a2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
@@ -26,17 +27,34 @@
             <div id="content-title" style="width: 100%"></div>
             <!-- Indicatore di caricamento -->
             <div id="loading" class="loading">
-                <p>Caricamento della mappa in corso...</p>
+                <p>Loading the map...</p>
             </div>
 
-
-            <!-- Contenitore della mappa (inizialmente nascosto) -->
             <div id="mappa-container">
                 <div id="mappa"></div>
-
-                <div class="punti-lista">
-                    <h3>Coordinate visualizzate:</h3>
-                    <ul id="lista-punti"></ul>
+            </div>
+            <div class="container" id="assignments-container">
+                <h5 style="color: #C1111F; font-weight: bold; margin-top: 2vh">Degree Info:</h5>
+                <div class="degree-infobox" id="degree-infobox">
+                    <div class="row degree-info-row">
+                        <div class="col-6 header" >Department:</div>
+                        <div class="col-6" id="department-value"></div>
+                    </div>
+                    <div class="row degree-info-row">
+                        <div class="col-6 header" >Department Headquarter:</div>
+                        <div class="col-6" id="department-hq-value"></div>
+                    </div>
+                    <div class="row degree-info-row">
+                        <div class="col-6 header" >Degree Level:</div>
+                        <div class="col-6" id="degree-level-value"></div>
+                    </div>
+                    <div class="row degree-info-row">
+                        <div class="col-6 header">Number of Students:</div>
+                        <div class="col-6" id="student-number-value"></div>
+                    </div>
+                </div>
+                <h5 style="color: #C1111F; font-weight: bold; margin-top: 2vh">Assignments:</h5>
+                <div class="degree-infobox" id="assignments-infobox">
                 </div>
             </div>
         </div>

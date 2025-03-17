@@ -17,8 +17,6 @@ function inizializzaMappa(listaCoordinate, secondoMarker) {
         if (mappa) {
             mappa.remove();
         }
-
-        document.getElementById('lista-punti').innerHTML = "";
         // Inizializza la mappa (centrata sull'Italia)
         mappa = L.map('mappa').setView([41.9028, 12.4964], 5);
         // Aggiungi il layer della mappa
@@ -44,12 +42,6 @@ function inizializzaMappa(listaCoordinate, secondoMarker) {
                 </div>
             `;
             marker.bindPopup(popupContent);
-
-            // Aggiungi il punto all'elenco HTML
-            const listaPunti = document.getElementById('lista-punti');
-            const li = document.createElement('li');
-            li.innerHTML = `<b>${punto.name}</b>: ${punto.lat}, ${punto.lng} ${punto.building ? '- ' + punto.building : ''}`;
-            listaPunti.appendChild(li);
 
             // Espandi i limiti per includere questo punto
             bounds.extend([punto.lat, punto.lng]);
@@ -80,13 +72,6 @@ function inizializzaMappa(listaCoordinate, secondoMarker) {
                 </div>
             `;
             marker.bindPopup(popupContent);
-
-            // Aggiungi il punto all'elenco HTML
-            const listaPunti = document.getElementById('lista-punti');
-            const li = document.createElement('li');
-            li.innerHTML = `<b style="color: red;">${secondoMarker.name}</b>: ${secondoMarker.lat}, ${secondoMarker.lng} ${secondoMarker.building ? '- ' + secondoMarker.building : ''}`;
-            listaPunti.appendChild(li);
-
             // Espandi i limiti per includere questo punto
             bounds.extend([secondoMarker.lat, secondoMarker.lng]);
         }
@@ -102,5 +87,5 @@ function inizializzaMappa(listaCoordinate, secondoMarker) {
         setTimeout(() => {
             mappa.invalidateSize();
         }, 100);
-    }, 500);
+    }, 100);
 }

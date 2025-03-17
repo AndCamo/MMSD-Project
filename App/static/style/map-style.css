@@ -2,9 +2,10 @@
     display: none; /* Nascondi inizialmente la mappa */
     margin: 0 auto;
     align-content: center;
+    width: 100%;
 }
 
-#mappa {
+#mappa{
 
     height: 60vh;
     width: 100%;

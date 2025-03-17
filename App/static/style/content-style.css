@@ -1,0 +1,42 @@
+#assignments-container{
+    display: none;
+}
+
+.degree-infobox{
+    font-size: 0.9em;
+}
+
+.header{
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+.degree-info-row{
+    border-collapse: collapse;
+    box-sizing: content-box;
+    border: solid 2px #1f1f1f;
+}
+
+.assignment-row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.assignment-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.assignment-row:hover {
+  background-color: #ffa9a9;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.assignment-row > div {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.assignment-row > div:not(:last-child) {
+  border-right: 1px solid #eee;
+}

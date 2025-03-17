@@ -7,9 +7,11 @@ from distance import get_distance, load_distance_dictionary
 WEEKLY_HOURS = 40  # Hours available per classroom per week
 MORNING_HOURS = 4  # Hours available in the morning
 EVENING_HOURS = 4  # Hours available in the evening
-MAX_STUDENTS_PER_CLASS = 180 # Maximum students allowed per subcourse
+MAX_STUDENTS_PER_CLASS = 200 # Maximum students allowed per subcourse
 LAB_PERCENTAGE = 0.25  # Percentage of time dedicated to lab classes
 WEEK_NUMBER = 12  # Number of weeks in a semester
+W1 = 1
+W2 = 1 / 3000
 
 # CFU values per degree type
 CFU_VALUES = {"I": 180, "II": 120, "CU": 300}
@@ -18,7 +20,7 @@ YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": None}
 # Attendance rate
 ATTENDANCE_RATES = {
     "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
-    "II": {1: 0.8, 2: 0.7},         # Master's (II)
+    "II": {1: 0.7, 2: 0.6},         # Master's (II)
     "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.65, 6: 0.65}  # CU Attendance rates for 5/6 years
 }
 
@@ -33,7 +35,10 @@ s = dict(zip(df_rooms["Code"], df_rooms["Capienza"]))  # Classroom capacities
 h = dict(zip(df_rooms["Code"], np.full(len(df_rooms), WEEKLY_HOURS)))  # Available hours per week
 
 # ================= LOAD COURSE DATA =================
-df_courses = pd.read_csv("Data/degree_dataset.csv", sep=";")
+df_courses_complete = pd.read_csv("Data/degree_dataset.csv", sep=";")
+print("caricato nuovo")
+df_courses = df_courses_complete[df_courses_complete["Modalita didattica"] == "convenzionale"]
+
 
 C = df_courses["COD"].tolist()  # List of courses
 n = dict(zip(df_courses["COD"], df_courses["Participants"]))  # Number of students per course
@@ -100,6 +105,7 @@ G = {"Mon", "Tue", "Wed", "Thu", "Fri"}
 # ================= PYOMO MODEL =================
 model = ConcreteModel()
 
+print("iniziaizzo modello")
 # Decision Variables
 model.x = Var([(a, y, c, g, t) for a in A for c in C for g in G for y in Y[c] for t in T], within=Binary)
 
@@ -133,14 +139,15 @@ for c in C:
 #    for y in Y[c]:
 #        model.forced_assignment.add(sum(model.x[a, y, c, g, t] for a in A for g in G for t in T) == 1)
 
+print("prima funzione")
 # ================= OBJECTIVE FUNCTION =================
 model.obj = Objective(expr=
-    sum(model.x[a, y, c, g, t] * get_distance(df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0],
-                                           df_rooms.loc[df_rooms["Code"] == a, "Indirizzo"].values[0],
-                                           distance_cache)
+    sum(W1 * model.x[a, y, c, g, t] *  get_distance(df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0], df_rooms.loc[df_rooms["Code"] == a, "Indirizzo"].values[0], distance_cache)
+        + W2 * abs(s[a] - (n_y[c][y] * attendance_rate_y[c][y])) * model.x[a, y, c, g, t]
         for a in A for c in C for y in Y[c] for g in G for t in T),
     sense=minimize)
 
+print("dopo funzione nuova")
 
 # ================= SOLVE MODEL =================
 solver = SolverFactory('cbc')
