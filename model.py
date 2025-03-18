@@ -11,7 +11,7 @@ MAX_STUDENTS_PER_CLASS = 200 # Maximum students allowed per subcourse
 LAB_PERCENTAGE = 0.25  # Percentage of time dedicated to lab classes
 WEEK_NUMBER = 12  # Number of weeks in a semester
 W1 = 1
-W2 = 1 / 3000
+W2 = 1/4000
 
 # CFU values per degree type
 CFU_VALUES = {"I": 180, "II": 120, "CU": 300}
@@ -142,9 +142,10 @@ for c in C:
 print("prima funzione")
 # ================= OBJECTIVE FUNCTION =================
 model.obj = Objective(expr=
-    sum(W1 * model.x[a, y, c, g, t] *  get_distance(df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0], df_rooms.loc[df_rooms["Code"] == a, "Indirizzo"].values[0], distance_cache)
-        + W2 * abs(s[a] - (n_y[c][y] * attendance_rate_y[c][y])) * model.x[a, y, c, g, t]
+    sum(model.x[a, y, c, g, t] *
+        get_distance(df_courses.loc[df_courses["COD"] == c, "Sede Dipartimento"].values[0], df_rooms.loc[df_rooms["Code"] == a, "Indirizzo"].values[0], distance_cache)
         for a in A for c in C for y in Y[c] for g in G for t in T),
+#+ W2 * abs(s[a] - (n_y[c][y] * attendance_rate_y[c][y])) * model.x[a, y, c, g, t]
     sense=minimize)
 
 print("dopo funzione nuova")

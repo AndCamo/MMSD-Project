@@ -4,12 +4,10 @@ import pandas as pd
 from geopy import distance
 geolocator = Nominatim(user_agent="progetto_mmsd")
 
-dataframe = pd.read_excel("Data/Elenco Aule - Usable Updated.xlsx")
+dataframe = pd.read_excel("Data/Elenco Aule - Usable.xlsx")
 
 
 def calculate_coordinates():
-
-
     addresses = dataframe["Indirizzo"].tolist()
     print(len(addresses))
     coordinates = []
@@ -37,9 +35,35 @@ def calculate_coordinates():
 
     return  coordinates
 
+def get_building_usage():
+    classroom_dataset = pd.read_csv("Data/classroom_dataset.csv", sep=";")
+    result_dataset = pd.read_excel("Classroom_Allocation.xlsx")
 
-pippo = calculate_coordinates()
-time.sleep(5)
-dataframe.insert(4, 'Coordinate', pippo)
+    buildings = list(classroom_dataset["Edificio"].unique())
 
-dataframe.to_csv("new_elenco_classroom.csv", encoding='utf-8', index=False)
+
+    # count the number of classroom in each building
+    building_dimension = {b: len(classroom_dataset["Edificio"].loc[classroom_dataset["Edificio"] == b]) for b in buildings}
+
+    # dict to count how many classroom are actually used
+    building_usage = {b : 0 for b in buildings}
+
+    unique_result_dataset = result_dataset.drop_duplicates(subset=["Classroom ID"])
+
+    for index, row in unique_result_dataset.iterrows():
+        classroom_assigned = row["Classroom ID"]
+        classroom_assigned_building = classroom_dataset.loc[
+            classroom_dataset["Code"] == classroom_assigned, "Edificio"].values[0]
+
+        building_usage[classroom_assigned_building] += 1
+
+
+    result_list = []
+    for key, value in building_usage.items():
+        new_row = [key, building_dimension[key], building_usage[key], (100 * building_usage[key])/building_dimension[key]]
+        result_list.append(new_row)
+
+    usage_dataframe = pd.DataFrame(result_list, columns=["Building", "Total Classrooms", "Used Classrooms", "Building Usage"])
+    usage_dataframe.to_csv("usage.csv", index=False)
+
+get_building_usage()

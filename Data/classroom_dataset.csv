@@ -313,17 +313,17 @@ Code;Edificio;Aula;Indirizzo;Coordinate;Capienza;N. PC;aulaInformatica;accessoDi
 345;Istituto Rosmini;Aula Docenti;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;10;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;0;0;0
 346;Istituto Rosmini;Aula Informatica Rosmini;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;15;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;1;1;0;0;0;0;0
 347;Istituto Rosmini;Aula Magna;Via Antonio Rosmini, 4/a, Torino;45.0489056, 7.6727131;209;0;0;0;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-348;Lingotto - Dental School;Aula 1;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;1;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-349;Lingotto - Dental School;Aula 2;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-350;Lingotto - Dental School;Aula 3;Via Nizza, 230, Torino;45.0330358, 7.6659645;60;1;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-351;Lingotto - Dental School;Aula 4;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-352;Lingotto - Dental School;Aula 5;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-353;Lingotto - Dental School;Aula 6;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-354;Lingotto - Dental School;Aula COI;Via Nizza, 230, Torino;45.0330358, 7.6659645;44;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
-355;Lingotto - Dental School;Aula Informatica;Via Nizza, 230, Torino;45.0330358, 7.6659645;10;9;1;1;0;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
-356;Lingotto - Dental School;Aula Laboratorio;Via Nizza, 230, Torino;45.0330358, 7.6659645;45;1;0;1;1;1;0;0;1;1;0;0;0;1;0;1;1;0;1;1;0;0;0;0;0
-357;Lingotto - Dental School;Aula Magna;Via Nizza, 230, Torino;45.0330358, 7.6659645;144;2;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
-358;Lingotto - Dental School;Aula Manichini;Via Nizza, 230, Torino;45.0330358, 7.6659645;21;1;0;1;1;0;0;0;0;1;0;0;0;0;1;0;1;0;1;1;0;0;0;0;0
+348;Lingotto - Dental School;Aula 1;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;44;1;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+349;Lingotto - Dental School;Aula 2;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+350;Lingotto - Dental School;Aula 3;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;60;1;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+351;Lingotto - Dental School;Aula 4;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+352;Lingotto - Dental School;Aula 5;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+353;Lingotto - Dental School;Aula 6;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;44;0;0;1;1;0;1;1;1;1;0;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+354;Lingotto - Dental School;Aula COI;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;44;0;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
+355;Lingotto - Dental School;Aula Informatica;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;10;9;1;1;0;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;0;0;0;0;0
+356;Lingotto - Dental School;Aula Laboratorio;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;45;1;0;1;1;1;0;0;1;1;0;0;0;1;0;1;1;0;1;1;0;0;0;0;0
+357;Lingotto - Dental School;Aula Magna;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;144;2;0;1;1;0;1;1;1;1;1;0;1;1;1;0;1;0;1;1;0;1;1;0;1
+358;Lingotto - Dental School;Aula Manichini;Via Nizza, 230, Torino;45.03351015517051, 7.666686263452124;21;1;0;1;1;0;0;0;0;1;0;0;0;0;1;0;1;0;1;1;0;0;0;0;0
 359;MBC;Aula Adenina;Via Nizza, 52, Torino;45.0501781, 7.6739911;15;1;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
 360;MBC;Aula Aristotele;Via Nizza, 52, Torino;45.0501781, 7.6739911;106;1;0;1;1;0;1;1;1;1;1;0;0;1;1;0;1;0;1;1;0;0;0;0;1
 361;MBC;Aula Copernico;Via Nizza, 52, Torino;45.0501781, 7.6739911;99;1;0;1;1;0;0;0;1;0;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0
