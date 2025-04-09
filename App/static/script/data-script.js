@@ -1,6 +1,7 @@
 let CLASSROOM_DATASET = ""
 let DEGREE_DATASET = ""
 let RESULT_DATASET = ""
+let STATS_DATASET = ""
 
 
 async function getAssignedClassroom(degree_id){
@@ -42,6 +43,7 @@ async function fetchData() {
         CLASSROOM_DATASET = JSON.parse(data["classroom_dataset"]);
         DEGREE_DATASET = JSON.parse(data["degree_dataset"]);
         RESULT_DATASET = JSON.parse(data["result_dataset"]);
+        STATS_DATASET =  JSON.parse(data["stats_dataset"]);
     } catch (error) {
         console.error('Errore nel recupero dei dati:', error);
     }
@@ -51,7 +53,6 @@ async function fetchData() {
     for (const degree of DEGREE_DATASET){
         degree_code = degree["COD"].toString();
         degree_name = degree["Denominazione CdS"];
-
         let degree_code_string = "'" + degree_code +"'";
         let degree_name_string = "'" + degree["Denominazione CdS"].toString().replaceAll("'", " ") +"'";
         let new_row =
@@ -64,13 +65,6 @@ async function fetchData() {
 }
 
 async function shiftCoordinates(lat, lon, maxShiftMeters = 5) {
-    /**
-     * Modifica leggermente le coordinate geografiche di un massimo di qualche metro.
-     * @param {number} lat - Latitudine originale
-     * @param {number} lon - Longitudine originale
-     * @param {number} maxShiftMeters - Massima distanza di spostamento in metri (default: 5 metri)
-     * @return {Array} Nuova coppia di coordinate [lat, lon]
-     */
 
     // Fattore di conversione approssimativo: 1 grado di latitudine ~ 111,32 km
     const metersPerDegree = 111320;
@@ -105,10 +99,11 @@ async function showContent(degree_id, degree_name){
             department_info.degree_level = degree["Livello"];
             department_info.number_of_students = degree["Participants"];
             department_info.department_location = degree["Sede Dipartimento"];
+            break
         }
     }
 
-    $("#content-title").html(`<h4 class='content-title'>Assigments for ${degree_name}</h4>`);
+    $("#content-title").html(`<h4 class='content-title'>Assignments for ${degree_name}</h4>`);
 
     await inizializzaMappa(classroom_assigned, department_info);
 
@@ -117,6 +112,33 @@ async function showContent(degree_id, degree_name){
     $("#department-hq-value").text(department_info.department_location);
     $("#student-number-value").text(department_info.number_of_students);
     $("#degree-level-value").text(department_info.degree_level);
+
+    let degree_stats = {
+        total_assignments: 0, in_build_assignments: 0, in_range_asssignments: 0
+    }
+
+    for (let stat of STATS_DATASET){
+        if (stat["Degree Code"] == degree_id){
+            degree_stats.total_assignments = parseInt(stat["Number of Assignments"]);
+            degree_stats.in_build_assignments = parseInt(stat["(0, 0.5)"]);
+            degree_stats.in_range_asssignments = parseInt(stat["(0, 0.5)"]) + parseInt(stat["(0.5, 1)"]);
+            break
+        }
+    }
+
+    let build_assigments_perc = ((degree_stats.in_build_assignments * 100) / degree_stats.total_assignments).toFixed(2);
+    let range_assigments_perc = ((degree_stats.in_range_asssignments * 100) / degree_stats.total_assignments).toFixed(2);
+
+    if (build_assigments_perc > 75){
+        $("#build-assignments-value").css("background-color", "#b7e744");
+    }
+    if (range_assigments_perc > 75){
+        $("#range-stasts-value").css("background-color", "#b7e744");
+    }
+
+    $("#total-assignments-value").text(degree_stats.total_assignments);
+    $("#build-assignments-value").text(`${degree_stats.in_build_assignments} (${build_assigments_perc}%)`);
+    $("#range-stasts-value").text(`${degree_stats.in_range_asssignments} (${range_assigments_perc}%)`);
 
     let assignments_container = document.getElementById("assignments-infobox");
     assignments_container.innerHTML = "                    " +
@@ -128,7 +150,6 @@ async function showContent(degree_id, degree_name){
                     "<div class=\"col-2\">Distance</div>\n" +
                 "</div>"
     classroom_assigned.forEach(classroom => {
-        console.log(classroom.toString());
         let new_row = `
                     <div class="row assignment-row">
                         <div class="col-1">${classroom["code"]}</div>

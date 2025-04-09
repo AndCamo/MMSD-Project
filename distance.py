@@ -3,11 +3,23 @@ import csv
 import pandas as pd
 from geopy import distance
 import pickle
+import math
+
 geolocator = Nominatim(user_agent="progetto_mmsd")
 
 
 # Dictionary data structure to save calculated addresses
 distance_cache = {}
+
+def manhattan_distance(lat1, lon1, lat2, lon2):
+    km_per_degree_lat = 111.32
+
+    avg_lat = math.radians((lat1 + lat2) / 2)
+
+    km_per_degree_lon = 111.32 * math.cos(avg_lat)
+
+    distance = (km_per_degree_lat * abs(lat2 - lat1)) + (km_per_degree_lon * abs(lon2 - lon1))
+    return distance
 
 def calculate_distances():
 
@@ -28,9 +40,8 @@ def calculate_distances():
                 try:
                     room_location = str(room["Coordinate"]).split(", ")
                     degree_location = str(degree["Coordinate"]).split(", ")
-                    dist = distance.distance((room_location[0], room_location[1]),
-                                             (degree_location[0], degree_location[1])).km
-
+                    dist = manhattan_distance(float(room_location[0]), float(room_location[1]), float(degree_location[0]), float(degree_location[1]))
+                    #dist = distance.distance((room_location[0], room_location[1]),(degree_location[0], degree_location[1])).km
                     distance_cache[key] = round(dist, 2)
                     print(f"[Calculated] {key}: {distance_cache[key]}")
                 except:
@@ -72,6 +83,15 @@ def get_distance(address1, address2, dictionary):
 
 
     return distance
+
+
+
+
+
+
+
+
+
 
 #calculate_distances()
 #serialize_distance_dictionary(distance_cache)

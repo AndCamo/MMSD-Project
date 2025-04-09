@@ -7,9 +7,11 @@ from distance import get_distance, load_distance_dictionary
 WEEKLY_HOURS = 40  # Hours available per classroom per week
 MORNING_HOURS = 4  # Hours available in the morning
 EVENING_HOURS = 4  # Hours available in the evening
-MAX_STUDENTS_PER_CLASS = 190 # Maximum students allowed per subcourse
-LAB_PERCENTAGE = 0.15  # Percentage of time dedicated to lab classes
+MAX_STUDENTS_PER_CLASS = 200 # Maximum students allowed per subcourse
+LAB_PERCENTAGE = 0.25  # Percentage of time dedicated to lab classes
 WEEK_NUMBER = 12  # Number of weeks in a semester
+W1 = 1 / 12
+W2 = 1 / 3000
 
 # CFU values per degree type
 CFU_VALUES = {"I": 180, "II": 120, "CU": 300}
@@ -18,7 +20,7 @@ YEARS_PER_TYPE = {"I": 3, "II": 2, "CU": None}
 # Attendance rate
 ATTENDANCE_RATES = {
     "I": {1: 0.8, 2: 0.7, 3: 0.6},  # Bachelor's (I)
-    "II": {1: 0.8, 2: 0.7},         # Master's (II)
+    "II": {1: 0.7, 2: 0.6},         # Master's (II)
     "CU": {1: 0.8, 2: 0.75, 3: 0.7, 4: 0.65, 5: 0.65, 6: 0.65}  # CU Attendance rates for 5/6 years
 }
 
@@ -33,9 +35,10 @@ s = dict(zip(df_rooms["Code"], df_rooms["Capienza"]))  # Classroom capacities
 h = dict(zip(df_rooms["Code"], np.full(len(df_rooms), WEEKLY_HOURS)))  # Available hours per week
 
 # ================= LOAD COURSE DATA =================
-df_courses = pd.read_csv("Data/degree_dataset_old.csv", sep=";")
+df_courses_complete = pd.read_csv("Data/degree_dataset.csv", sep=";")
+print("caricato nuovo")
+df_courses = df_courses_complete[df_courses_complete["Modalita didattica"] == "convenzionale"]
 
-#df_courses = df_courses_complete[df_courses_complete["Modalita didattica"] == "convenzionale"]
 
 C = df_courses["COD"].tolist()  # List of courses
 n = dict(zip(df_courses["COD"], df_courses["Participants"]))  # Number of students per course
@@ -95,19 +98,11 @@ for c in C:
             class_hours_y[c][y] = (cfu_per_subcourse * 8 / WEEK_NUMBER ) / 2 #divided by 2 semesters
             attendance_rate_y[c][y] = ATTENDANCE_RATES[level].get(year, 0.6)  # Default to 60% if missing
 
+# ================= TIME SLOTS =================
+T = ["M", "E"]
+j = {"M": MORNING_HOURS, "E": EVENING_HOURS}
+G = {"Mon", "Tue", "Wed", "Thu", "Fri"}
 
-datalist = []
-for c in C:
-     for y in Y[c]:
-         new_row = {
-             "Code" : y,
-             "Degree Name": df_courses.loc[df_courses["COD"] == c, "Denominazione CdS"].values[0],
-             "N. Enrolled Students": n_y[c][y],
-             "Total Degree Students" : n[c]
-         }
 
-         datalist.append(list(new_row.values()))
-
-df_results = pd.DataFrame(datalist, columns=["Code", "Degree Name", "N. Enrolled Students", "Total Degree Students"])
-
-df_results.to_csv("/Users/andrea/Desktop/test.csv", index=False)
+for sub in Y["008707"]:
+    print(f"{sub}: {n_y['008707'][sub] * attendance_rate_y['008707'][sub]}")
